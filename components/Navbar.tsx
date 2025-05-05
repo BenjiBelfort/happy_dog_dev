@@ -44,7 +44,7 @@ export default function Navbar() {
     <nav className="bg-vert-clair text-vert-fonce md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-50 shadow-lg/30">
       <div className="max-w-7xl mx-auto flex justify-center items-center">
         {/* Desktop links */}
-        <div className="hidden md:flex items-center space-x-6 text-lg font-medium text-vert-fonce">
+        <div className="hidden md:flex items-center space-x-6 text-lg font-bold text-vert-fonce">
           {links.map(path => (
             <Link
               key={path}

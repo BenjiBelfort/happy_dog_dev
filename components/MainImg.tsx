@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import TextBloc from './TextBloc';
 
 const MainImg = () => {
   return (
@@ -117,7 +118,7 @@ const MainImg = () => {
                 alt="Pattes"
                 width={50}
                 height={50}
-                className="w-auto h-10 md:h-12 rotate-25 drop-shadow-lg/30"
+                className="hidden md:block w-auto h-10 md:h-12 rotate-25 drop-shadow-lg/30"
             />
             </motion.div>
 
@@ -187,15 +188,26 @@ const MainImg = () => {
                 />
             </motion.div>
 
-
-          <div className="bg-sky-700 text-white md:rounded-xl p-8 text-center shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-2">Bienvenue dans la boutique des chiens heureux</h1>
-            <p className="mb-1">Nous vous accueillons</p>
-            <p className="mb-1">Du lundi au samedi de 8h à 19h</p>
-            <p className="mb-1">11 Rue du Général Roussel, 90000 Belfort</p>
-            <p className="text-base">06 46 46 76 17</p>
-          </div>
+                
+            <div className="relative bg-sky-700 text-white md:rounded-xl p-8 text-center shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat pb-16 md:pb-12">
+                <h1 className="text-3xl sm:text-4xl font-bold mb-2">Bienvenue dans la boutique des chiens heureux</h1>
+                <p className="mb-1">Nous vous accueillons</p>
+                <p className="mb-1">11 rue du Général Roussel, 90000 Belfort</p>
+                <p className="text-base">06 46 46 76 17</p>
+                <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row justify-center md:items-center bg-vert-clair text-vert-fonce w-full py-2 md:max-w-3xl h-auto md:h-11 md:w-3xl md:rounded-md shadow-lg/30 md:gap-1 text-xl sm:text-2xl font-bold">
+                    <h2>Du lundi au vendredi de 8h15 à 17h30</h2>
+                    <h2>et le samedi de 10h à 16h.</h2>
+                </div>
+            </div>
         </div>
+
+        <TextBloc
+        texts={[
+          "Découvrez un univers enchanté pour vos compagnons à quatre pattes.",
+          "Venez découvrir notre espace garderie de jour et notre boutique canine !",
+        ]}
+      />
+
       </div>
     </section>
   );

@@ -62,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${zillaSlab.variable} ${libreFranklin.variable}`}>
-      <body className="overflow-x-hidden">
+      <body>
         <Guirlande />
         <Navbar />
         <main>{children}</main>
