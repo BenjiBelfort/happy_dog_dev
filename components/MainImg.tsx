@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 const MainImg = () => {
   return (
     <section className="relative w-full h-screen">
-      <div className="absolute inset-0 w-full h-full -z-10 bg-confetti-animated">
-        <svg className="w-full h-full -translate-y-[22vh]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <div className="absolute inset-0 w-full h-full bg-confetti-animated">
+        <svg className="w-full h-full -translate-y-[22vh] overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <defs>
                 <mask id="header-mask" className="mask-type-alpha">
                     <image
@@ -49,7 +49,7 @@ const MainImg = () => {
             alt="Logo Happy Dog"
             width={280}
             height={280}
-            className="mx-auto drop-shadow-lg/30"
+            className="h-20 w-auto md:h-40 mx-auto drop-shadow-lg/30"
           />
         </motion.div>
 
@@ -139,7 +139,7 @@ const MainImg = () => {
                     alt="Pattes"
                     width={50}
                     height={50}
-                    className="w-auto h-10 md:h-12 rotate-25 drop-shadow-lg/30"
+                    className="hidden md:block w-auto h-10 md:h-12 rotate-25 drop-shadow-lg/30"
                 />
             </motion.div>
 
@@ -154,7 +154,7 @@ const MainImg = () => {
                     duration: 0.3,
                     delay: 1.6
                 }}
-                className="absolute bottom-17 right-2 z-10 "
+                className="hidden md:block absolute bottom-17 right-2 z-10 "
                 >
                 <Image
                     src="/pattern/patte.png"
@@ -176,7 +176,7 @@ const MainImg = () => {
                     duration: 0.3,
                     delay: 1.8
                 }}
-                className="absolute top-18 -right-9 z-10 rotate-8"
+                className="hidden md:block absolute top-18 -right-9 z-10 rotate-8"
                 >
                 <Image
                     src="/pattern/patte.png"

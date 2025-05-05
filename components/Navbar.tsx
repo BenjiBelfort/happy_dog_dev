@@ -9,9 +9,6 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-
-  
-
   // Gérer le blocage du scroll sur mobile
   useEffect(() => {
     if (menuOpen) {
@@ -44,7 +41,7 @@ export default function Navbar() {
   const links = ['/boutique', '/produits', '/services', '/contact'];
 
   return (
-    <nav className="bg-vert-clair text-vert-fonce md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-100 shadow-lg/30">
+    <nav className="bg-vert-clair text-vert-fonce md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-50 shadow-lg/30">
       <div className="max-w-7xl mx-auto flex justify-center items-center">
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-6 text-lg font-medium text-vert-fonce">
@@ -91,8 +88,8 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 bg-vert-clair flex flex-col items-center pt-6 text-vert-fonce transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? 'translate-y-0' : '-translate-y-full'
+        className={`fixed top-0 left-0 mx-auto w-full min-h-screen bg-vert-clair flex flex-col items-center text-vert-fonce transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? 'translate-y-0 h-screen' : '-translate-y-full'
         } md:hidden block`}
       >
         {/* Bouton de fermeture */}
@@ -106,11 +103,11 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex justify-center items-center my-8" onClick={() => setMenuOpen(false)}>
-          <Image src={logo} alt="Logo Happy Dog" className="w-40" />
+          <Image src={logo} alt="Logo Happy Dog" className="w-40" width={806} height={439} />
         </Link>
         
         {/* Liens */}
-        <div className="flex flex-col w-full text-2xl font-medium">
+        <div className="flex flex-col justify-center w-full text-2xl font-medium">
           {links.map((path) => (
             <div key={path} className="w-full">
               <hr className="w-full border-t border-vert-fonce opacity-50" />

@@ -14,7 +14,7 @@ export default function Guirlande() {
         damping: 12,
         delay: 1.7, // décale l'animation si besoin
       }}
-      className="fixed left-1/2 top-[30px] -translate-x-1/2 z-50"
+      className="fixed left-1/2 top-[30px] -translate-x-1/2 z-40"
     >
       <Image
         src="/pattern/guirlande.png"
