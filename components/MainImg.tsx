@@ -7,29 +7,29 @@ import TextBloc from './TextBloc';
 const MainImg = () => {
   return (
     <section className="relative w-full h-screen">
-      <div className="absolute inset-0 w-full h-full bg-confetti-animated">
-        <svg className="w-full h-full -translate-y-[22vh] overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <defs>
-                <mask id="header-mask" className="mask-type-alpha">
-                    <image
-                    href="/pattern/header-mask.png"
+        <div className="absolute inset-0 w-full h-full">
+            <svg className="w-full h-full -translate-y-[22vh] overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <mask id="header-mask" className="mask-type-alpha">
+                        <image
+                        href="/pattern/header-mask.png"
+                        width="100%"
+                        height="100%"
+                        preserveAspectRatio="xMidYMid slice"
+                        className=""
+                        />
+                    </mask>
+                </defs>
+
+                <image
+                    href="/images/boutique3.webp"
                     width="100%"
                     height="100%"
                     preserveAspectRatio="xMidYMid slice"
-                    className=""
-                    />
-                </mask>
-            </defs>
-
-            <image
-                href="/images/boutique3.webp"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid slice"
-                mask="url(#header-mask)"
-                className="grayscale-50"
-            />
-        </svg>
+                    mask="url(#header-mask)"
+                    className="grayscale-50"
+                />
+            </svg>
         </div>
 
       {/* Groupe logo + cadre infos */}
@@ -58,7 +58,7 @@ const MainImg = () => {
         <div className="relative md:bg-white md:rounded-xl md:p-2 w-full md:max-w-5xl md:shadow-lg/30 mt-22">
 
           {/* Marguerites */}
-            <motion.div
+            {/* <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{
@@ -98,7 +98,7 @@ const MainImg = () => {
                 height={48}
                 className="drop-shadow-lg/30"
             />
-            </motion.div>
+            </motion.div> */}
 
             {/* Patte 1 */}
             <motion.div
@@ -203,10 +203,10 @@ const MainImg = () => {
 
         <TextBloc
         texts={[
-          "Découvrez un univers enchanté pour vos compagnons à quatre pattes.",
-          "Venez découvrir notre espace garderie de jour et notre boutique canine !",
-        ]}
-      />
+            "Découvrez un univers enchanté pour vos compagnons à quatre pattes.",
+            "Venez découvrir notre espace garderie de jour et notre boutique canine !",
+            ]}
+        />
 
       </div>
     </section>

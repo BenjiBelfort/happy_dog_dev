@@ -20,13 +20,13 @@ const testimonies = [
 
 const Testimony = () => {
   return (
-    <section className="py-12 max-w-6xl mx-auto">
+    <section className="py-12 bg-emerald-100">
       <h3 className="text-3xl font-semibold text-center mb-10">
         Qu&apos;en disent nos amis à quatre pattes ?
       </h3>
-      <div className="flex flex-col md:flex-row md:justify-between gap-8">
+      <div className="flex flex-col md:flex-row md:justify-between gap-8 max-w-6xl mx-auto">
         {testimonies.map((item, index) => (
-          <div key={index} className="flex items-start gap-4 max-w-md mx-auto">
+          <div key={index} className="flex items-start gap-4 max-w-md">
             <Image
               src={item.image}
               alt={`Portrait de ${item.author}`}

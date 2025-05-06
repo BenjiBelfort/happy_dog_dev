@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
+
 import { Zilla_Slab, Libre_Franklin } from "next/font/google";
 import "./globals.css";
+
+import BackgroundWrapper from "@/components/patterns/BackgroundWrapper";
+import HeaderImage from "@/components/headers/HeaderImage";
+
 import Navbar from "../components/Navbar";
-import Guirlande from "@/components/ui/Guirlande";
 import Footer from "../components/Footer";
 
 const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
   variable: "--font-zilla-slab",
-  weight: ["400", "700"], // choisis les graisses dont tu as besoin
+  weight: ["400", "500", "700"], // choisis les graisses dont tu as besoin
 });
 
 const libreFranklin = Libre_Franklin({
@@ -18,28 +22,27 @@ const libreFranklin = Libre_Franklin({
 });
 
 export const metadata: Metadata = {
-  title: 'Accueil – HD Créations', // 📝 Titre par défaut de ton site
-  description: 'Boutique artisanale dédiée à l’art et à la création – HD vous propose des produits uniques et faits main.', // 📝 Description pour les moteurs de recherche
-  keywords: ['artisanat', 'création', 'HD', 'boutique', 'fait main'], // 🔍 Mots-clés optionnels (pas indispensable pour Google)
-  authors: [{ name: 'Benji Belfort', url: 'https://benji-belfort-portfolio.netlify.app/' }], // 👤 Auteur (toi ou ton dev)
-  creator: 'HD Créations', // ✏️ Nom de l’auteur du contenu
-  publisher: 'HD Créations', // 🏢 Nom de l’éditeur
+  title: 'La boutique des chiens heureux à Belfort | Happy Dog',
+  description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage', // 📝 Description pour les moteurs de recherche
+  authors: [{ name: 'Benji Belfort', url: 'https://benji-belfort-portfolio.netlify.app/' }],
+  creator: 'Happy Dog', // ✏️ Nom de l’auteur du contenu
+  publisher: 'Happy Dog', // 🏢 Nom de l’éditeur
   icons: {
     icon: '/favicon.ico', // 📌 Favicon
     shortcut: '/favicon.ico', // 📌 Version raccourcie (par sécurité)
     apple: '/apple-touch-icon.png', // 🍎 Icône iOS (si tu la crées)
   },
   openGraph: {
-    title: 'HD Créations – Artisanat et Passion', // 📣 Titre pour le partage sur les réseaux sociaux
-    description: 'Découvrez l’univers unique de HD : artisanat, passion et œuvres faites main.', // 📣 Description réseaux sociaux
-    url: 'https://www.hd-creations.fr', // 🌐 Lien de ton site (à adapter)
-    siteName: 'HD Créations', // 🌐 Nom du site
+    title: 'Happy Dog, la boutique des chiens heureux à Belfort',
+    description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
+    url: 'https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr', // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    siteName: 'La boutique des chiens heureux à Belfort | Happy Dog',
     images: [
       {
         url: '/images/og-image.jpg', // 🖼️ Image pour le partage (1200x630 conseillé)
         width: 1200,
         height: 630,
-        alt: 'Photo de la boutique HD Créations', // 🖼️ Texte alternatif
+        alt: 'Photo de la boutique des chiens heureux Happy Dog', // 🖼️ Texte alternatif
       },
     ],
     type: 'website', // 🌐 Type (souvent "website" ou "article")
@@ -47,11 +50,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image', // 🐦 Type de carte Twitter
-    title: 'HD Créations – Artisanat et Passion', // 🐦 Titre Twitter
-    description: 'Découvrez l’univers unique de HD : artisanat, passion et œuvres faites main.', // 🐦 Description Twitter
+    title: 'Happy Dog, la boutique des chiens heureux à Belfort',
+    description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
     images: ['/images/og-image.jpg'], // 🐦 Image Twitter
   },
-  metadataBase: new URL('https://www.hd-creations.fr'), // 🌍 Base pour générer des URLs absolues
+  metadataBase: new URL('https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr'), // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 };
 
 
@@ -60,12 +63,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="fr" className={`${zillaSlab.variable} ${libreFranklin.variable}`}>
-      <body>
-        <Guirlande />
+      <body className="relative min-h-screen flex flex-col">
+        <BackgroundWrapper />
+        <HeaderImage />
         <Navbar />
-        <main>{children}</main>
+        <main className="relative z-10 flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
