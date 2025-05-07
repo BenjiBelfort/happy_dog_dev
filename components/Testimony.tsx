@@ -9,7 +9,7 @@ const testimonies = [
   {
     image: '/images/portraits/portrait2.png',
     quote: 'Une expérience inoubliable, bravo à toute l’équipe.',
-    author: 'Paco',
+    author: 'Voyce',
   },
   {
     image: '/images/portraits/portrait3.png',
@@ -20,7 +20,7 @@ const testimonies = [
 
 const Testimony = () => {
   return (
-    <section className="py-12 flex flex-col items-center">
+    <section className="py-12 flex flex-col items-center bg-emerald-200 shadow-lg">
       <h3 className="text-3xl font-semibold text-center mb-10">
         Qu&apos;en disent nos amis à quatre pattes ?
       </h3>
@@ -30,9 +30,9 @@ const Testimony = () => {
             <Image
               src={item.image}
               alt={`Portrait de ${item.author}`}
-              width={150}
-              height={150}
-              className="object-cover drop-shadow-md h-32 md:h-auto"
+              width={190}
+              height={190}
+              className="object-cover drop-shadow-md h-45 md:h-auto"
             />
             <div>
               <p className="text-gray-700 hyphens-auto">« {item.quote} »</p>

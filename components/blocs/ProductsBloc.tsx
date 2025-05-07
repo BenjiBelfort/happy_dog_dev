@@ -4,7 +4,7 @@ import LinkButton from "../ui/buttons/LinkButton";
 
 const ProductsBloc = () => {
   return (
-    <article className="relative flex flex-col-reverse md:flex-row justify-center items-center text-center text-vert-fonce bg-sky-300 md:rounded-3xl p-8 shadow-lg/30 bg-[url('/images/backgrounds/fond-os.png')] bg-repeat max-w-4xl mx-auto my-24 gap-6">
+    <article className="relative flex flex-col-reverse md:flex-row justify-center items-center text-center text-vert-fonce bg-sky-300 md:rounded-3xl p-8 shadow-lg/30 max-w-4xl mx-auto my-24 gap-6 bg-[url('/pattern/pattern-dots.png')] bg-repeat">
 
         {/* Partie gauche */}
         <div className="md:basis-3/5">
@@ -22,7 +22,7 @@ const ProductsBloc = () => {
 
         {/* Partie droite */}
         <div className="md:basis-2/5 mx-auto">
-            <div className="bg-sky-500/80 rounded-3xl p-3 my-12 mx-4">
+            <div className="bg-slate-500/80 rounded-3xl p-3 my-12 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
                     <span className="py-4 text-sky-500">
                         <PiBoneFill size={48} />

@@ -4,13 +4,13 @@ import LinkButton from "../ui/buttons/LinkButton";
 
 const ProductsBloc2 = () => {
   return (
-    <article className="relative flex flex-col md:flex-row justify-center items-center text-center text-vert-fonce bg-amber-300 md:rounded-3xl p-8 shadow-lg/30 bg-[url('/images/backgrounds/fond-os.png')] bg-repeat max-w-4xl mx-auto my-24 gap-6">
+    <article className="relative flex flex-col md:flex-row justify-center items-center text-center text-vert-fonce bg-slate-300 md:rounded-3xl p-8 shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat max-w-4xl mx-auto my-24 gap-6">
 
         {/* Partie gauche */}
         <div className="md:basis-2/5 mx-auto">
-            <div className="bg-amber-500/80 rounded-3xl p-3 my-12 mx-4">
+            <div className="bg-slate-500/80 rounded-3xl p-3 my-12 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
-                    <span className="py-4 text-amber-500">
+                    <span className="py-4 text-slate-500">
                         <GiSpiralLollipop size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Accessoires</h3>
@@ -18,7 +18,7 @@ const ProductsBloc2 = () => {
                     <LinkButton
                         text="Découvrir"
                         href="/produits"
-                        bgColor="bg-amber-600"
+                        bgColor="bg-slate-600"
                         hoverColor=""
                     />
                 </div>
