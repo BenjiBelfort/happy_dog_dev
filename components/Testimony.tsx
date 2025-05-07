@@ -20,22 +20,22 @@ const testimonies = [
 
 const Testimony = () => {
   return (
-    <section className="py-12 bg-emerald-100">
+    <section className="py-12 flex flex-col items-center">
       <h3 className="text-3xl font-semibold text-center mb-10">
         Qu&apos;en disent nos amis à quatre pattes ?
       </h3>
-      <div className="flex flex-col md:flex-row md:justify-between gap-8 max-w-6xl mx-auto">
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-8 max-w-6xl mx-auto">
         {testimonies.map((item, index) => (
-          <div key={index} className="flex items-start gap-4 max-w-md">
+          <div key={index} className="flex items-start gap-4 max-w-md px-4">
             <Image
               src={item.image}
               alt={`Portrait de ${item.author}`}
               width={150}
               height={150}
-              className="rounded-full object-cover drop-shadow-md"
+              className="object-cover drop-shadow-md h-32 md:h-auto"
             />
             <div>
-              <p className="text-gray-700">« {item.quote} »</p>
+              <p className="text-gray-700 hyphens-auto">« {item.quote} »</p>
               <h3 className="mt-4 font-bold text-xl text-gray-900">— {item.author}</h3>
             </div>
           </div>

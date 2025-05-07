@@ -8,18 +8,18 @@ const ProductsBloc2 = () => {
 
         {/* Partie gauche */}
         <div className="md:basis-2/5 mx-auto">
-            <div className="bg-amber-500/80 rounded-3xl p-3">
+            <div className="bg-amber-500/80 rounded-3xl p-3 my-12 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
-                    <span className="py-4">
+                    <span className="py-4 text-amber-500">
                         <GiSpiralLollipop size={48} />
                     </span>
-                    <h3 className="text-3xl sm:text-4xl font-medium">Accessoires</h3>
-                    <p className="my-4">Toute une gamme d&apos;accéssoires pour le plaisir de nos toutous.</p>
+                    <h3 className="text-3xl sm:text-4xl font-bold">Accessoires</h3>
+                    <p className="my-4 hyphens-auto">Une gamme d&apos;accéssoires pour le plaisir de nos toutous.</p>
                     <LinkButton
-                        text="Acheter"
+                        text="Découvrir"
                         href="/produits"
                         bgColor="bg-amber-600"
-                        hoverColor="hover:bg-amber-800"
+                        hoverColor=""
                     />
                 </div>
             </div>
@@ -27,7 +27,7 @@ const ProductsBloc2 = () => {
 
         {/* Partie droite */}
         <div className="md:basis-3/5">
-            <div className="h-96 border-18 border-white bg-yellow-300 shadow-lg/50 overflow-hidden -rotate-2">
+            <div className="h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden -rotate-2">
                 <Image
                     src="/images/produits/accessoires.webp"
                     alt="Chien heureux"

@@ -1,7 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+
+
 import { FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../public/Logo-Happy-Dog.png';
@@ -9,6 +12,7 @@ import logo from '../public/Logo-Happy-Dog.png';
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
@@ -21,8 +25,36 @@ export default function Navbar() {
     { path: '/#contact', label: 'Contact' },
   ];
 
+  const showLeftLogo = pathname !== '/';
+
   return (
     <nav className="bg-vert-clair text-xl text-vert-fonce w-full md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-50 shadow-lg/30 font-medium">
+
+        {/* Logo en position absolute à gauche, mais en dehors du nav sticky */}
+        {showLeftLogo && (
+          <motion.div
+            className="hidden lg:block absolute -translate-x-36 top-6 -translate-y-1/2 xl:-translate-x-49 xl:top-9 z-50"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+              type: 'spring',
+              stiffness: 90,
+              damping: 12,
+              duration: 0.8,
+            }}
+          >
+            <Link href="/" aria-label="Retour à l'accueil">
+              <Image
+                src={logo}
+                alt="Logo Happy Dog"
+                width={70}
+                height={70}
+                className="w-28 xl:w-40 h-auto drop-shadow-lg"
+              />
+            </Link>
+          </motion.div>
+        )}
+
       <div className="mx-auto">
         {/* Desktop links */}
         <div className="hidden md:flex justify-center space-x-6">
@@ -32,7 +64,9 @@ export default function Navbar() {
               href={path}
               onMouseEnter={() => setActiveLink(path)}
               onMouseLeave={() => setActiveLink(null)}
-              className="relative inline-block px-4 py-2"
+              className={`relative inline-block px-4 py-2 ${
+                pathname === path ? 'underline underline-offset-4' : ''
+              }`}
             >
               <span className="relative z-10">{label}</span>
               <AnimatePresence>
@@ -137,7 +171,9 @@ export default function Navbar() {
               <Link
                 href={path}
                 onClick={() => setMenuOpen(false)}
-                className="flex justify-center items-center h-24 w-full text-center"
+                className={`flex justify-center items-center h-24 w-full text-center ${
+                  pathname === path ? 'underline underline-offset-4' : ''
+                }`}
               >
                 {label}
               </Link>
@@ -162,3 +198,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

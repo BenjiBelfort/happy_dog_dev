@@ -30,7 +30,7 @@ const LinkButton = ({
     <div className="relative group inline-block m-4">
         {/* Sur-bouton qui apparaît derrière */}
         <div
-            className="bg-fuchsia-300/50 absolute inset-0 rounded-2xl transition-all duration-300 ease-out 
+            className="bg-yellow-300/50 absolute inset-0 rounded-2xl transition-all duration-300 ease-out 
              opacity-0 group-hover:opacity-100 group-hover:scale-x-110 group-hover:scale-y-123 shadow-md/10"
         />
       

@@ -1,15 +1,15 @@
 
 type BackgroundPatternProps = {
-  variant?: "confetti" | "os" | "none";
+  variant?: "pattes" | "os" | "none";
 };
 
-const BackgroundPattern: React.FC<BackgroundPatternProps> = ({ variant = "confetti" }) => {
+const BackgroundPattern: React.FC<BackgroundPatternProps> = ({ variant = "pattes" }) => {
   if (variant === "none") return null;
 
   // Définition des classes selon le variant
   let backgroundClass = "";
-  if (variant === "confetti") {
-    backgroundClass = "bg-[url('/images/backgrounds/Fond-HD-1.jpg')] bg-[length:250px_250px]";
+  if (variant === "pattes") {
+    backgroundClass = "bg-[url('/images/backgrounds/Fond-pattes.jpg')] bg-[length:500px_500px]";
   } else if (variant === "os") {
     backgroundClass = "bg-[url('/images/backgrounds/fond-os.png')] bg-[length:80px_80px]";
   }

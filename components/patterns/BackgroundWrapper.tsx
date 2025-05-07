@@ -7,10 +7,10 @@ import BackgroundPattern from "@/components/patterns/BackgroundPattern";
 const BackgroundWrapper = () => {
   const pathname = usePathname();
 
-  const getPatternVariant = (): "confetti" | "os" | "none" => {
-    if (pathname === "/") return "confetti";
+  const getPatternVariant = (): "pattes" | "os" | "none" => {
+    if (pathname === "/") return "pattes";
     if (pathname === "/produits") return "os";
-    if (pathname === "/services") return "confetti";
+    if (pathname === "/services") return "pattes";
     return "none";
   };
 

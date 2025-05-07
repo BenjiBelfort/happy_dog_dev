@@ -10,7 +10,9 @@
     --color-bleu-clair: #d6e3ef;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-libre-franklin), sans-serif;
