@@ -5,6 +5,7 @@ import ProductsBloc from '@/components/blocs/ProductsBloc';
 import ProductsBloc2 from '@/components/blocs/ProductsBloc2';
 import ProductsBloc3 from '@/components/blocs/ProductsBloc3';
 import ProductsBloc4 from '@/components/blocs/ProductsBloc4';
+import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
 import Testimony from '@/components/Testimony';
 import VioletteBloc from '@/components/blocs/VioletteBloc';
 
@@ -23,6 +24,7 @@ const Home = () => {
       <ProductsBloc2 />
       <ProductsBloc3 />
       <ProductsBloc4 />
+      <ProductsBloc5 />
       <Testimony />
       <VioletteBloc />
     </>

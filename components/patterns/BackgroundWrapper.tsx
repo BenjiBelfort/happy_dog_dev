@@ -9,7 +9,7 @@ const BackgroundWrapper = () => {
 
   const getPatternVariant = (): "pattes" | "os" | "none" => {
     if (pathname === "/") return "pattes";
-    if (pathname === "/produits") return "os";
+    if (pathname === "/produits") return "pattes";
     if (pathname === "/services") return "pattes";
     return "none";
   };

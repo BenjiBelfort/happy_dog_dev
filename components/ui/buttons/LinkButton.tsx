@@ -13,7 +13,6 @@ interface LinkButtonProps {
     text: string;
     href: string;
     bgColor?: string; // ex: "bg-emerald-700"
-    hoverColor?: string; // ex: 'hover:bg-emerald-800'
     className?: string;
 }  
 
@@ -23,7 +22,6 @@ const LinkButton = ({
         text,
         href,
         bgColor = 'bg-emerald-700',
-        hoverColor = 'hover:bg-emerald-800',
         className = '',
     }: LinkButtonProps) => {
   return (
@@ -37,7 +35,7 @@ const LinkButton = ({
         {/* Bouton principal */}
         <Link
             href={href}
-            className={`relative z-10 flex items-center gap-4 ${bgColor} ${hoverColor} text-white font-bold text-xl rounded-xl px-6 py-4 transition duration-300 ${zillaSlab.className} ${className}`}
+            className={`relative z-10 flex items-center gap-4 ${bgColor} text-white font-bold text-xl rounded-xl px-6 py-4 transition duration-300 ${zillaSlab.className} ${className}`}
         >
         {text}
             <span className="transform transition duration-300 group-hover:translate-x-1">

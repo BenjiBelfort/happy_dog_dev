@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import PageTitle from '@/components/headers/PageTitle';
 
 export const metadata: Metadata = {
   title: 'Services pour chiens heureux à Belfort | Happy Dog',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
     return (
       <section className="h-full">
-        <h1 className="text-3xl text-center">Page des Services</h1>;
+        <PageTitle />
       </section>
     )
   }

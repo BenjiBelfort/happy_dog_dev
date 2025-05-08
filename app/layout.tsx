@@ -28,9 +28,34 @@ export const metadata: Metadata = {
   creator: 'Happy Dog', // ✏️ Nom de l’auteur du contenu
   publisher: 'Happy Dog', // 🏢 Nom de l’éditeur
   icons: {
-    icon: '/favicon.ico', // 📌 Favicon
-    shortcut: '/favicon.ico', // 📌 Version raccourcie (par sécurité)
-    apple: '/apple-touch-icon.png', // 🍎 Icône iOS (si tu la crées)
+    icon: "/favicon.ico", // format par défaut
+    shortcut: "/favicon.ico", // version raccourcie
+    apple: "/apple-touch-icon.png", // iOS
+    other: [
+      {
+        rel: "icon",
+        url: "/favicon-96x96.png",
+        type: "image/png",
+        sizes: "96x96",
+      },
+      {
+        rel: "icon",
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        rel: "apple-touch-icon",
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+      {
+        rel: "manifest",
+        url: "/site.webmanifest",
+      },
+    ],
+  },
+  appleWebApp: {
+    title: "Happy Dog",
   },
   openGraph: {
     title: 'Happy Dog, la boutique des chiens heureux à Belfort',

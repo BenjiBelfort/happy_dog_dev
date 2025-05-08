@@ -1,5 +1,9 @@
-import { Metadata } from "next";
-import TextBloc from "@/components/TextBloc";
+import { Metadata } from "next"; 
+import PageTitle from '@/components/headers/PageTitle';
+import ProductSommaire from '@/components/ui/buttons/ProductSommaire'
+import CroquettesSection from "@/components/CroquettesSection";
+import AccessoiresSection from "@/components/AccessoiresSection";
+
 
 export const metadata: Metadata = {
   title: 'Produits pour chiens heureux à Belfort | Happy Dog',
@@ -28,14 +32,10 @@ export const metadata: Metadata = {
 const ProduitsPage = () => {
   return (
     <section className="h-full">
-      <h1 className="text-3xl text-center">Page des Produits</h1>
-      <TextBloc
-        texts={[
-          "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        ]}
-      />
+      <PageTitle />
+      <ProductSommaire />
+      <CroquettesSection />
+      <AccessoiresSection />
     </section>
   )
 }

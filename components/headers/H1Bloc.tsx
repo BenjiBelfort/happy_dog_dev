@@ -30,7 +30,7 @@ const H1Bloc = () => {
     >
         {/* Partie 1 */}
         <div className="md:basis-2/3 px-4">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-2 hyphens-auto">Bienvenue dans la boutique <br />des chiens heureux !</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2 md:px-8 hyphens-auto">Bienvenue dans la boutique des chiens heureux&nbsp;!</h1>
             <Image
                 src="/images/backgrounds/ornement.png"
                 alt="ornement"
