@@ -10,7 +10,7 @@ const VioletteBloc = () => {
         {/* Partie gauche */}
         <div className="md:basis-1/2 mx-auto text-center p-6">
             <h3 className="text-3xl sm:text-4xl font-bold">Qui sommes nous ?</h3>
-            <p className="mt-4 hyphens-auto">Je m&apos;appelle Violette et voici mon acolyte Vicky, ma tornade d&apos;amour, toujours à mes côtés pour vous accueillir dans notre boutique consacrée aux chiens heureux.</p>
+            <p className="mt-4">Je m&apos;appelle Violette et voici mon acolyte Vicky, ma tornade d&apos;amour, toujours à mes côtés pour vous accueillir dans notre boutique consacrée aux chiens heureux.</p>
             <Image
                 src="/images/backgrounds/ornement.png"
                 alt="ornement"

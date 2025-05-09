@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       onClick={onClick}
       className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col p-2 sm:p-3 transition-transform duration-200 hover:scale-[1.05] focus:outline-none ${bgColor}`}
     >
-      <div className="w-full h-56 relative">
+      <div className="w-full h-62 relative">
         <Image
           src={image}
           alt={produit}
@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         />
       </div>
       <h3 className="text-xl font-bold mt-4">{produit}</h3>
-      <p className="text-sm text-gray-600 mt-2">{description}</p>
+      <p className="mb-2 text-sm lg:text-base">{description}</p>
     </button>
   );
 };

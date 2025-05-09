@@ -35,7 +35,7 @@ const Testimony = () => {
               className="object-cover drop-shadow-md h-32 md:h-36"
             />
             <div>
-              <p className="text-gray-700 hyphens-auto">« {item.quote} »</p>
+              <p>« {item.quote} »</p>
               <h3 className="mt-4 font-bold text-xl text-gray-900">— {item.author}</h3>
             </div>
           </div>

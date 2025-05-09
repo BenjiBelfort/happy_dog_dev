@@ -35,6 +35,9 @@ nav {
   font-family: var(--font-zilla-slab), serif;
 }
 
+p {
+  hyphens: auto;
+}
 
 @keyframes patternScroll {
   0% {

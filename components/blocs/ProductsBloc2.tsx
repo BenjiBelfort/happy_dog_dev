@@ -14,7 +14,7 @@ const ProductsBloc2 = () => {
                         <FaVest size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Accessoires</h3>
-                    <p className="my-4 hyphens-auto">Une gamme d&apos;accéssoires pour le plaisir de nos toutous.</p>
+                    <p className="my-4">Une gamme d&apos;accéssoires pour le plaisir de nos toutous.</p>
                     <LinkButton
                         text="Découvrir"
                         href="/produits#accessoires"
@@ -26,7 +26,7 @@ const ProductsBloc2 = () => {
 
         {/* Partie droite */}
         <div className="md:basis-3/5">
-            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden -rotate-2">
+            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-rotate-2">
                 <Image
                     src="/images/produits/accessoires.webp"
                     alt="Chien heureux"

@@ -8,7 +8,7 @@ import ProductsBloc4 from '@/components/blocs/ProductsBloc4';
 import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
 import Testimony from '@/components/Testimony';
 import VioletteBloc from '@/components/blocs/VioletteBloc';
-import NextBloc from '@/components/NextBloc';
+import Partenaires from '@/components/Partenaires';
 
 const Home = () => {
   return (
@@ -28,12 +28,7 @@ const Home = () => {
       <ProductsBloc5 />
       <Testimony />
       <VioletteBloc />
-      <TextBloc
-        texts={[
-          "Ici logos des marques 🇫🇷",
-        ]}
-      />
-      <NextBloc />
+      <Partenaires />
     </>
   )
 }

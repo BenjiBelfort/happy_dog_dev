@@ -28,7 +28,7 @@ const ProductsBloc = () => {
                         <PiBoneFill size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Alimentation</h3>
-                    <p className="my-4 hyphens-auto">Découvrez notre gamme de compléments alimentaires, croquettes et friandises fabriqués en France 🇫🇷.</p>
+                    <p className="my-4">Découvrez notre gamme de compléments alimentaires, croquettes et friandises fabriqués en France 🇫🇷.</p>
                     <LinkButton
                         text="Découvrir"
                         href="/produits#alimentation"

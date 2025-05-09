@@ -4,27 +4,86 @@
         "produit": "Scraps Recette Originale",
         "categorie": "Alimentation",
         "description": "Le classique inimitable qui croustille !",
-        "image": "/images/produits/produits/scraps3.webp"
+        "description_longue": "",
+        "image": "/images/produits/alimentation/scraps3.webp"
     },
     {
         "id": "alimentation-02",
         "produit": "Scraps Tomate & Fromage",
         "categorie": "Alimentation",
         "description": "Notre gamme gourmande mais pas trop",
-        "image": "/images/produits/produits/scraps1.webp"
+        "description_longue": "",
+        "image": "/images/produits/alimentation/scraps1.webp"
     },
     {
         "id": "alimentation-03",
         "produit": "Scraps Epinards & Varech",
         "categorie": "Alimentation",
         "description": "Et si votre chien se mettait au vert ?",
-        "image": "/images/produits/produits/scraps2.webp"
+        "description_longue": "",
+        "image": "/images/produits/alimentation/scraps2.webp"
     },
+    {
+        "id": "alimentation-04",
+        "produit": "Scraps Pruneaux & miel",
+        "categorie": "Alimentation",
+        "description": "Une touche fruitée et sucrée en récompense ultime !",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/scraps4.webp"
+    },
+    {
+        "id": "alimentation-05",
+        "produit": "Humid Food – Real Beef",
+        "categorie": "Alimentation",
+        "description": "Notre nouveau dîner préféré : pâté de bœuf",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/Real_Beef.webp"
+    },
+    {
+        "id": "alimentation-06",
+        "produit": "Humid Food – Real Beef",
+        "categorie": "Alimentation",
+        "description": "Notre nouveau dîner préféré : saumon",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/Real_salmon.webp"
+    },
+    {
+        "id": "alimentation-07",
+        "produit": "Humid Food – Real Beef",
+        "categorie": "Alimentation",
+        "description": "Notre nouveau dîner préféré : pâté de dinde",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/Real_Turkey.webp"
+    },
+    {
+        "id": "alimentation-08",
+        "produit": "Snack pour chiens Poulet et Carottes - Happy Farm",
+        "categorie": "Alimentation",
+        "description": "",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/Happy-Farm-poulet-carottes.webp"
+    },
+    {
+        "id": "alimentation-09",
+        "produit": "Snack pour chiens Canard et Courgettes - Happy Farm",
+        "categorie": "Alimentation",
+        "description": "",
+        "description_longue": "",
+        "image": "/images/produits/alimentation/Happy-Farm-canard-courgettes.webp"
+    },
+
+
+
+
+
+
+
     {
         "id": "accessoire-01",
         "produit": "Gamelle 1",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
+        "description_longue": "",
         "image": "/images/produits/accessoires/Accessoires_1.webp"
     },
     {
@@ -32,6 +91,7 @@
         "produit": "Gamelle 2",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
+        "description_longue": "",
         "image": "/images/produits/accessoires/Accessoires_2.webp"
     },
     {
@@ -39,6 +99,7 @@
         "produit": "Gamelle 3",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
+        "description_longue": "",
         "image": "/images/produits/accessoires/Accessoires_3.webp"
     },
     {
@@ -46,6 +107,7 @@
         "produit": "Jouet corde renforcée",
         "categorie": "Jeux",
         "description": "Un jouet solide pour les mâchoires puissantes.",
+        "description_longue": "",
         "image": "/images/produits/jeux/jouets.webp"
     },
     {
@@ -53,6 +115,7 @@
         "produit": "Jouet 2",
         "categorie": "Jeux",
         "description": "description jeux 2.",
+        "description_longue": "",
         "image": "/images/produits/jeux/jouets.webp"
     }
   ]
