@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Viewport } from 'next'
 
 import { Zilla_Slab, Libre_Franklin } from "next/font/google";
 import "./globals.css";
@@ -12,7 +13,7 @@ import Footer from "../components/Footer";
 const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
   variable: "--font-zilla-slab",
-  weight: ["400", "500", "700"], // choisis les graisses dont tu as besoin
+  weight: ["400", "500", "700"],
 });
 
 const libreFranklin = Libre_Franklin({
@@ -20,6 +21,14 @@ const libreFranklin = Libre_Franklin({
   variable: "--font-libre-franklin",
   weight: ["400", "700"],
 });
+
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export const metadata: Metadata = {
   title: 'La boutique des chiens heureux à Belfort | Happy Dog',
@@ -70,8 +79,8 @@ export const metadata: Metadata = {
         alt: 'Photo de la boutique des chiens heureux Happy Dog', // 🖼️ Texte alternatif
       },
     ],
-    type: 'website', // 🌐 Type (souvent "website" ou "article")
-    locale: 'fr_FR', // 🇫🇷 Langue locale
+    type: 'website',
+    locale: 'fr_FR',
   },
   twitter: {
     card: 'summary_large_image', // 🐦 Type de carte Twitter
