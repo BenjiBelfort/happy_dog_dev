@@ -4,6 +4,7 @@ import React from "react";
 import { PiBoneFill } from "react-icons/pi";
 import { FaVest } from "react-icons/fa6";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { GiSpiralLollipop } from "react-icons/gi";
 import { Zilla_Slab } from "next/font/google";
 
 const zillaSlab = Zilla_Slab({
@@ -38,7 +39,7 @@ const sections: SectionItem[] = [
     section: "Jeux",
     href: "#jeux",
     bgColor: "bg-rose-500",
-    icon: <PiBoneFill size={36} />,
+    icon: <GiSpiralLollipop size={36} />,
     iconColor: "text-rose-500",
   },
 ];
@@ -49,7 +50,7 @@ const ProductSommaire: React.FC = () => {
       {sections.map(({ section, href, bgColor, icon, iconColor }, index) => (
         <div
           key={index}
-          className="bg-slate-500/80 rounded-2xl md:rounded-3xl p-2 sm:p-3 w-full relative group"
+          className="bg-slate-500/80 rounded-2xl md:rounded-3xl p-2 sm:p-3 w-full relative"
         >
           <div className="bg-white rounded-xl px-2 sm:px-4 md:p-6 flex flex-row md:flex-col items-center justify-between shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat">
             <span className={`hidden md:block py-3 ${iconColor}`}>{icon}</span>

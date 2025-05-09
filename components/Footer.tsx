@@ -1,6 +1,6 @@
 
 
-const Footer: React.FC = () => {
+const Footer = () => {
     const currentYear: number = new Date().getFullYear();
 
     return (
@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
             <p>&#169; {currentYear} - HAPPY DOG -</p>
             <p>Tous droits réservés.</p>
             <a
-                className="hover:text-sky-600 transition-colors"
+                className="hover:text-sky-700 hover:underline transition-colors"
                 href="https://benji-belfort-portfolio.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"

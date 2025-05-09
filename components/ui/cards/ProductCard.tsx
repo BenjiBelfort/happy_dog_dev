@@ -17,14 +17,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col p-3 transition-transform duration-200 hover:scale-[1.01] focus:outline-none ${bgColor}`}
+      className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col p-2 sm:p-3 transition-transform duration-200 hover:scale-[1.05] focus:outline-none ${bgColor}`}
     >
       <div className="w-full h-56 relative">
         <Image
           src={image}
           alt={produit}
           fill
-          className="object-cover rounded-md"
+          className="object-cover rounded-xl"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
@@ -37,13 +37,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
 const getBgColor = (categorie: string): string => {
   switch (categorie.toLowerCase()) {
     case "croquettes":
-      return "bg-sky-300";
+      return "bg-sky-200";
     case "accessoires":
-      return "bg-slate-300";
+      return "bg-slate-200";
     case "jeux":
-      return "bg-rose-300";
+      return "bg-rose-200";
     default:
-      return "bg-gray-300";
+      return "bg-gray-200";
   }
 };
 

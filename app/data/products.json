@@ -1,45 +1,59 @@
 [
     {
+        "id": "croquette-01",
         "produit": "Scraps Recette Originale",
         "categorie": "Croquettes",
         "description": "Le classique inimitable qui croustille !",
         "image": "/images/produits/produits/scraps3.webp"
     },
     {
+        "id": "croquette-02",
         "produit": "Scraps Tomate & Fromage",
         "categorie": "Croquettes",
         "description": "Notre gamme gourmande mais pas trop",
         "image": "/images/produits/produits/scraps1.webp"
     },
     {
+        "id": "croquette-03",
         "produit": "Scraps Epinards & Varech",
         "categorie": "Croquettes",
         "description": "Et si votre chien se mettait au vert ?",
         "image": "/images/produits/produits/scraps2.webp"
     },
     {
+        "id": "accessoire-01",
         "produit": "Gamelle 1",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
         "image": "/images/produits/accessoires/Accessoires_1.webp"
     },
     {
+        "id": "accessoire-02",
         "produit": "Gamelle 2",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
         "image": "/images/produits/accessoires/Accessoires_2.webp"
     },
     {
+        "id": "accessoire-03",
         "produit": "Gamelle 3",
         "categorie": "Accessoires",
         "description": "Description gamelle 1",
         "image": "/images/produits/accessoires/Accessoires_3.webp"
     },
     {
+        "id": "jeux-01",
         "produit": "Jouet corde renforcée",
         "categorie": "Jeux",
         "description": "Un jouet solide pour les mâchoires puissantes.",
-        "image": "/images/produits/jouet-corde.jpg"
+        "image": "/images/produits/jeux/jouets.webp"
+    },
+    {
+        "id": "jeux-02",
+        "produit": "Jouet 2",
+        "categorie": "Jeux",
+        "description": "description jeux 2.",
+        "image": "/images/produits/jeux/jouets.webp"
     }
   ]
   

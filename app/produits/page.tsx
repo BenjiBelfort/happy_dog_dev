@@ -3,6 +3,8 @@ import PageTitle from '@/components/headers/PageTitle';
 import ProductSommaire from '@/components/ui/buttons/ProductSommaire'
 import CroquettesSection from "@/components/CroquettesSection";
 import AccessoiresSection from "@/components/AccessoiresSection";
+import JeuxSection from "@/components/JeuxSection";
+import NextBloc from "@/components/NextBloc";
 
 
 export const metadata: Metadata = {
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr', // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
     images: [
       {
-        url: '/images/og-produits.jpg',
+        url: '/images/produits/produits1.webp',
         width: 1200,
         height: 630,
         alt: 'Produits pour chiens heureux chez Happy Dog',
@@ -36,6 +38,8 @@ const ProduitsPage = () => {
       <ProductSommaire />
       <CroquettesSection />
       <AccessoiresSection />
+      <JeuxSection />
+      <NextBloc />
     </section>
   )
 }

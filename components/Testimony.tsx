@@ -22,7 +22,7 @@ const Testimony = () => {
   return (
     <section className="py-12 flex flex-col items-center bg-emerald-200 shadow-lg">
       <h3 className="text-3xl font-semibold text-center mb-10">
-        Qu&apos;en disent nos amis à quatre pattes ?
+        Qu&apos;en pensent nos amis à quatre pattes ?
       </h3>
       <div className="flex flex-col lg:flex-row lg:justify-between gap-8 max-w-6xl mx-auto">
         {testimonies.map((item, index) => (
@@ -32,7 +32,7 @@ const Testimony = () => {
               alt={`Portrait de ${item.author}`}
               width={190}
               height={190}
-              className="object-cover drop-shadow-md h-45 md:h-auto"
+              className="object-cover drop-shadow-md h-32 md:h-36"
             />
             <div>
               <p className="text-gray-700 hyphens-auto">« {item.quote} »</p>

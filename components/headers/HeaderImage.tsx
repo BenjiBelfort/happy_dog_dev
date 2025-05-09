@@ -36,7 +36,7 @@ const HeaderImage = () => {
         alt="Image d'en-tête"
         fill
         priority
-        className="object-cover grayscale-50"
+        className="object-cover"
       />
     </div>
   );

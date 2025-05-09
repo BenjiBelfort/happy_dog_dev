@@ -27,6 +27,11 @@ const Home = () => {
       <ProductsBloc5 />
       <Testimony />
       <VioletteBloc />
+      <TextBloc
+        texts={[
+          "Ici logos des marques 🇫🇷",
+        ]}
+      />
     </>
   )
 }
