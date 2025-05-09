@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const VioletteBloc = () => {
   return (
-    <article className="relative flex flex-col md:flex-row items-center bg-slate-300 md:rounded-3xl  p-6 shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat max-w-3xl mx-auto my-32" id='contact'>
+    <article id='contact' className="relative flex flex-col md:flex-row items-center bg-slate-300 md:rounded-3xl  p-6 shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat max-w-3xl mx-auto my-32 scroll-mt-4 md:scroll-mt-32">
 
 
 

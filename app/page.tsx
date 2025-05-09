@@ -8,6 +8,7 @@ import ProductsBloc4 from '@/components/blocs/ProductsBloc4';
 import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
 import Testimony from '@/components/Testimony';
 import VioletteBloc from '@/components/blocs/VioletteBloc';
+import NextBloc from '@/components/NextBloc';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
           "Ici logos des marques 🇫🇷",
         ]}
       />
+      <NextBloc />
     </>
   )
 }

@@ -1,22 +1,22 @@
 [
     {
-        "id": "croquette-01",
+        "id": "alimentation-01",
         "produit": "Scraps Recette Originale",
-        "categorie": "Croquettes",
+        "categorie": "Alimentation",
         "description": "Le classique inimitable qui croustille !",
         "image": "/images/produits/produits/scraps3.webp"
     },
     {
-        "id": "croquette-02",
+        "id": "alimentation-02",
         "produit": "Scraps Tomate & Fromage",
-        "categorie": "Croquettes",
+        "categorie": "Alimentation",
         "description": "Notre gamme gourmande mais pas trop",
         "image": "/images/produits/produits/scraps1.webp"
     },
     {
-        "id": "croquette-03",
+        "id": "alimentation-03",
         "produit": "Scraps Epinards & Varech",
-        "categorie": "Croquettes",
+        "categorie": "Alimentation",
         "description": "Et si votre chien se mettait au vert ?",
         "image": "/images/produits/produits/scraps2.webp"
     },

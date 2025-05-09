@@ -10,6 +10,14 @@
     --color-bleu-clair: #d6e3ef;
 }
 
+/* styles/globals.css */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+    background-color: #f8ffe6; /* ou toute autre couleur de fond claire */
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

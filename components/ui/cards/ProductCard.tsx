@@ -36,14 +36,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
 const getBgColor = (categorie: string): string => {
   switch (categorie.toLowerCase()) {
-    case "croquettes":
-      return "bg-sky-200";
+    case "alimentation":
+      return "bg-sky-300";
     case "accessoires":
-      return "bg-slate-200";
+      return "bg-slate-300";
     case "jeux":
-      return "bg-rose-200";
+      return "bg-rose-300";
     default:
-      return "bg-gray-200";
+      return "bg-gray-300";
   }
 };
 

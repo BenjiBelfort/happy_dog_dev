@@ -1,7 +1,7 @@
 import { Metadata } from "next"; 
 import PageTitle from '@/components/headers/PageTitle';
 import ProductSommaire from '@/components/ui/buttons/ProductSommaire'
-import CroquettesSection from "@/components/CroquettesSection";
+import AlimentationSection from "@/components/AlimentationSection";
 import AccessoiresSection from "@/components/AccessoiresSection";
 import JeuxSection from "@/components/JeuxSection";
 import NextBloc from "@/components/NextBloc";
@@ -36,7 +36,7 @@ const ProduitsPage = () => {
     <section className="h-full">
       <PageTitle />
       <ProductSommaire />
-      <CroquettesSection />
+      <AlimentationSection />
       <AccessoiresSection />
       <JeuxSection />
       <NextBloc />

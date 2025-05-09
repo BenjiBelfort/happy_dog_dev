@@ -8,7 +8,7 @@ const ProductsBloc = () => {
 
         {/* Partie gauche */}
         <div className="md:basis-3/5">
-            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden -rotate-2">
+            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-rotate-2">
                 <Image
                     src="/images/produits/produits1.webp"
                     alt="Chien heureux"
@@ -27,11 +27,11 @@ const ProductsBloc = () => {
                     <span className="py-4 text-sky-500">
                         <PiBoneFill size={48} />
                     </span>
-                    <h3 className="text-3xl sm:text-4xl font-bold">Croquettes</h3>
-                    <p className="my-4 hyphens-auto">Découvrez notre gamme de croquette et friandises pour chiens made in France.</p>
+                    <h3 className="text-3xl sm:text-4xl font-bold">Alimentation</h3>
+                    <p className="my-4 hyphens-auto">Découvrez notre gamme de compléments alimentaires, croquettes et friandises fabriqués en France 🇫🇷.</p>
                     <LinkButton
                         text="Découvrir"
-                        href="/produits#croquettes"
+                        href="/produits#alimentation"
                         bgColor="bg-sky-600"
                     />
                 </div>

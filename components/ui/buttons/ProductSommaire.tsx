@@ -22,8 +22,8 @@ interface SectionItem {
 
 const sections: SectionItem[] = [
   {
-    section: "Croquettes",
-    href: "#croquettes",
+    section: "Alimentation",
+    href: "#alimentation",
     bgColor: "bg-sky-600",
     icon: <PiBoneFill size={36} />,
     iconColor: "text-sky-500",
