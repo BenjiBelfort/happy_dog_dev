@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-import { FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../public/Logo-Happy-Dog.png';
 
@@ -88,6 +88,39 @@ export default function Navbar() {
               </AnimatePresence>
             </Link>
           ))}
+
+          {/* Facebook Icon */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61566776497698#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            onMouseEnter={() => setActiveLink('facebook')}
+            onMouseLeave={() => setActiveLink(null)}
+            className="relative inline-block px-3 py-2 text-2xl"
+          >
+            <span className="relative z-10">
+              <FaFacebook />
+            </span>
+            <AnimatePresence>
+              {activeLink === 'facebook' && (
+                <motion.span
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 1.2 }}
+                  transition={{ duration: 0.5, ease: [0.5, -0.5, 0.3, 1.4] }}
+                  className="absolute top-[-5%] left-[-10%] right-[-10%] bottom-[-5%] z-0"
+                  style={{
+                    backgroundColor: '#e5ecf4',
+                    borderRadius: '92% 8% 90% 10% / 14% 90% 10% 86%',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                    filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1))',
+                  }}
+                />
+              )}
+            </AnimatePresence>
+          </a>
+
           {/* Instagram Icon */}
           <a
             href="https://www.instagram.com/happydogbelfort"
@@ -101,6 +134,7 @@ export default function Navbar() {
             <span className="relative z-10">
               <FaInstagram />
             </span>
+          
             <AnimatePresence>
               {activeLink === 'instagram' && (
                 <motion.span
@@ -182,7 +216,17 @@ export default function Navbar() {
           <hr className="w-full border-t border-vert-fonce opacity-50" />
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 flex gap-6">
+          <a
+            href="https://www.facebook.com/profile.php?id=61566776497698#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Facebook"
+          >
+            <FaFacebook />
+          </a>
           <a
             href="https://www.instagram.com/happydogbelfort"
             target="_blank"

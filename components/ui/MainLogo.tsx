@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const MainLogo = () => {
   return (
     
-    <div className="py-24 md:py-30 overflow-hidden">
+    <div className="py-24 md:py-28 overflow-hidden">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 2 }}
@@ -23,7 +23,7 @@ const MainLogo = () => {
           alt="Logo Happy Dog"
           width={806}
           height={439}
-          className="h-20 w-auto md:h-35 drop-shadow-lg/50"
+          className="h-20 w-auto md:h-30 drop-shadow-lg/50"
         />
       </motion.div>
     </div>

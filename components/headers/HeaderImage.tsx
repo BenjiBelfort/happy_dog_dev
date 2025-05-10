@@ -20,7 +20,7 @@ const HeaderImage = () => {
 
   return (
     <div
-      className="absolute -top-1 left-0 w-full h-[400px] sm:h-[450px] lg:h-[550px] z-0 overflow-hidden"
+      className="absolute -top-1 left-0 w-full h-[300px] sm:h-[350px] lg:h-[450px] z-0 overflow-hidden"
       style={{
         WebkitMaskImage: "url('/pattern/header-mask.png')",
         WebkitMaskRepeat: 'no-repeat',

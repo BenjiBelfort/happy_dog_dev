@@ -14,9 +14,9 @@ const VioletteBloc = () => {
             <Image
                 src="/images/backgrounds/ornement.png"
                 alt="ornement"
-                width={200}
-                height={200}
-                className="mx-auto my-3 invert"
+                width={565}
+                height={63}
+                className="w-54 mx-auto my-2 invert"
             />
             <p className="">11 rue du Général Roussel, 90000 Belfort</p>
             <p className="font-bold">06 46 46 76 17</p>

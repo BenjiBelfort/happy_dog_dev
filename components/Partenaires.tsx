@@ -25,15 +25,15 @@ const Partenaires = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Nos marques partenaires
         </h2>
-        <div className="grid grid-cols-3 gap-6 items-center justify-items-center">
+        <div className="grid grid-cols-3 gap-6 place-items-center">
             {partnerBrands.map((brand) => (
-            <div key={brand.name} className="w-32 h-16 relative grayscale hover:grayscale-0 hover:scale-105 transition duration-300">
+            <div key={brand.name} className="w-32 grayscale hover:grayscale-0 hover:scale-105 transition duration-300">
                 <Image
                     src={brand.logo}
                     alt={brand.alt}
-                    layout="fill"
-                    objectFit="contain"
-                    className="drop-shadow-lg/30"
+                    width={150}
+                    height={150}
+                    className="object-fill drop-shadow-lg/30"
                 />
             </div>
             ))}
