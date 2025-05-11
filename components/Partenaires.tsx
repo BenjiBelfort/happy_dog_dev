@@ -3,7 +3,7 @@ import Image from 'next/image'
 const partnerBrands = [
   {
     name: 'Scraps Gourrmets',
-    logo: '/images/Marques/logo-scraps-gourrmet-2.png',
+    logo: '/images/Marques/logo-scraps-gourrmet-2.webp',
     alt: 'Logo Scraps Gourrmets',
   },
   {
@@ -15,12 +15,17 @@ const partnerBrands = [
     name: 'Croci',
     logo: '/images/Marques/croci-logo-wy.svg',
     alt: 'Logo Croci',
+  },
+  {
+    name: 'Zippy Paws',
+    logo: '/images/Marques/ZippyPaws_logo.webp',
+    alt: 'Logo Zippy Paws',
   }
 ]
 
 const Partenaires = () => {
   return (
-    <section className="py-12 bg-emerald-200">
+    <section className="py-12 bg-teal-200">
         <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Nos marques partenaires

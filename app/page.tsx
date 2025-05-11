@@ -9,6 +9,7 @@ import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
 import Testimony from '@/components/Testimony';
 import VioletteBloc from '@/components/blocs/VioletteBloc';
 import Partenaires from '@/components/Partenaires';
+import Guirlande from '@/components/ui/Guirlande';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <ProductsBloc4 />
       <ProductsBloc5 />
       <Testimony />
+      <Guirlande />
       <VioletteBloc />
       <Partenaires />
     </>

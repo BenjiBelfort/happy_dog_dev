@@ -14,7 +14,7 @@ const HeaderImage = () => {
         return {
           src: "/images/headers/header_home.webp",
           alt: "Photo de la boutique Happy Dog à Belfort",
-          heightClass: "h-[400px] sm:h-[450px] lg:h-[550px]",
+          heightClass: "h-[400px] sm:h-[550px] lg:h-[620px]",
         };
       case "/produits":
         return {

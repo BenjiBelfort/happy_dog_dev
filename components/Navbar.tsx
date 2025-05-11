@@ -28,12 +28,12 @@ export default function Navbar() {
   const showLeftLogo = pathname !== '/';
 
   return (
-    <nav className="bg-vert-clair text-xl text-vert-fonce w-full md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-50 shadow-lg/30 font-medium">
+    <nav className="bg-vert-clair text-xl text-vert-fonce w-full md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-20 shadow-lg/30 font-medium">
 
         {/* Logo en position absolute à gauche, mais en dehors du nav sticky */}
         {showLeftLogo && (
           <motion.div
-            className="hidden lg:block absolute -translate-x-36 top-6 -translate-y-1/2 xl:-translate-x-49 xl:top-9 z-50"
+            className="hidden lg:block absolute -translate-x-36 top-6 -translate-y-1/2 xl:-translate-x-49 xl:top-9 z-20"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{

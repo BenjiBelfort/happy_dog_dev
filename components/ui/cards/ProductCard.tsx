@@ -17,19 +17,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col p-2 sm:p-3 transition-transform duration-200 hover:scale-[1.05] focus:outline-none ${bgColor}`}
+      className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col transition-transform duration-200 hover:scale-[1.05] focus:outline-none ${bgColor}`}
     >
       <div className="w-full h-62 relative">
         <Image
           src={image}
           alt={produit}
           fill
-          className="object-cover rounded-xl"
+          className="object-cover"
           sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
-      <h3 className="text-xl font-bold mt-4">{produit}</h3>
-      <p className="mb-2 text-sm lg:text-base">{description}</p>
+      <div className="p-2">
+        <h3 className="text-xl font-bold">{produit}</h3>
+        <p className="mb-2 text-sm lg:text-base">{description}</p>
+      </div>
     </button>
   );
 };
