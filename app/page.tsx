@@ -18,8 +18,8 @@ const Home = () => {
       <H1Bloc />
       <TextBloc
         texts={[
-          "Découvrez un univers enchanté pour vos compagnons à quatre pattes.",
-          "Venez découvrir notre espace garderie de jour et notre boutique canine !",
+          "Pour le plaisir de vos compagnons à quatre pattes,",
+          "venez découvrir notre espace garderie de jour et notre boutique canine !",
         ]}
       />
       <ProductsBloc />
