@@ -9,6 +9,7 @@ const images = [
     '/images/headers/happy-dog-2.webp',
     '/images/headers/happy-dog-3.webp',
     '/images/headers/happy-dog-4.webp',
+    '/images/headers/happy-dog-5.webp',
 ];
 
 const H1Bloc = () => {
@@ -55,7 +56,7 @@ const H1Bloc = () => {
                 >
                 <Image
                     src={images[index]}
-                    alt="Chien heureux"
+                    alt="Chiens heureux"
                     fill
                     className="object-cover object-top"
                     priority
@@ -69,7 +70,7 @@ const H1Bloc = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }} // 1 seconde après début du logo
         className="text-black absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row justify-center md:items-center bg-emerald-50 w-full py-2 md:max-w-3xl h-auto md:h-11 md:w-3xl md:rounded-md shadow-lg/30 md:gap-1 text-xl sm:text-2xl font-bold">
-            <h2>Du lundi au vendredi de 8h15 à 17h30</h2>
+            <h2>Du lundi au vendredi de 9h15 à 17h30</h2>
             <h2>et le samedi de 10h à 16h.</h2>
         </motion.div>
     </motion.div>

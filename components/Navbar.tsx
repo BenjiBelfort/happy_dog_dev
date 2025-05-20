@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 import { FaFacebook, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../public/Logo-Happy-Dog.png';
@@ -20,7 +19,7 @@ export default function Navbar() {
 
   const links = [
     { path: '/', label: 'Accueil' },
-    { path: '/produits', label: 'Produits' },
+    { path: '/#products', label: 'Produits' },
     { path: '/services', label: 'Services' },
     { path: '/#contact', label: 'Contact' },
   ];

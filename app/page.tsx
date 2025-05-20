@@ -1,9 +1,7 @@
 import MainLogo from '@/components/ui/MainLogo';
 import H1Bloc from '@/components/headers/H1Bloc';
 import TextBloc from '@/components/TextBloc';
-import ProductsBloc from '@/components/blocs/ProductsBloc';
-import ProductsBloc2 from '@/components/blocs/ProductsBloc2';
-import ProductsBloc3 from '@/components/blocs/ProductsBloc3';
+import ProductsSection from '@/components/ProductsSection';
 import ProductsBloc4 from '@/components/blocs/ProductsBloc4';
 import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
 import Testimony from '@/components/Testimony';
@@ -22,9 +20,7 @@ const Home = () => {
           "venez découvrir notre espace garderie de jour et notre boutique canine !",
         ]}
       />
-      <ProductsBloc />
-      <ProductsBloc2 />
-      <ProductsBloc3 />
+      <ProductsSection />
       <ProductsBloc4 />
       <ProductsBloc5 />
       <Testimony />

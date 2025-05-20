@@ -80,7 +80,7 @@ const partnerBrands = [
 
 const Partenaires = () => {
   return (
-    <section className="py-12 bg-teal-200">
+    <section className="py-12 bg-teal-300">
         <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
             Nos marques partenaires
