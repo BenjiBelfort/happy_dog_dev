@@ -1,122 +1,42 @@
 [
     {
-      "image": "/images/produits/alimentation/scraps3.webp",
+      "image": "/images/produits/alimentation/4-produits-scrapsWeb.webp",
       "id": "alimentation-01",
       "categorie": "Alimentation",
-      "produit": "Scraps Recette Originale",
-      "description": "Le classique inimitable qui croustille !",
+      "produit": "Scraps Friandises",
+      "description": "Avec SCRAPS Gourmet, les moments de récompense de vos animaux de compagnie deviennent de purs moments de plaisir sain. Nous nous engageons dans un cercle vertueux de production et d’innovation anti-gaspillage. Nos biscuits made in France, naturels et gourmands promettent à vos fidèles compagnons des encas naturels, savoureux, croustillants et haut-de-gamme.",
       "description_longue": ""
     },
     {
-      "image": "/images/produits/alimentation/scraps1.webp",
+      "image": "/images/produits/alimentation/cookas-cookies.webp",
       "id": "alimentation-02",
       "categorie": "Alimentation",
-      "produit": "Scraps Tomate & Fromage",
-      "description": "Notre gamme gourmande mais pas trop",
+      "produit": "Cooka's Cookies – Humid Food",
+      "description": "Notre nouveau dîner préféré",
       "description_longue": ""
     },
     {
-      "image": "/images/produits/alimentation/scraps2.webp",
+      "image": "/images/produits/alimentation/happy-farm-snacks.webp",
       "id": "alimentation-03",
       "categorie": "Alimentation",
-      "produit": "Scraps Epinards & Varech",
-      "description": "Et si votre chien se mettait au vert ?",
+      "produit": "Snack pour chiens - Happy Farm",
+      "description": "Gamme complète",
       "description_longue": ""
     },
     {
-      "image": "/images/produits/alimentation/scraps4.webp",
-      "id": "alimentation-04",
-      "categorie": "Alimentation",
-      "produit": "Scraps Pruneaux & miel",
-      "description": "Une touche fruitée et sucrée en récompense ultime !",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/Real_Beef.webp",
-      "id": "alimentation-05",
-      "categorie": "Alimentation",
-      "produit": "Humid Food – Real Beef",
-      "description": "Notre nouveau dîner préféré : pâté de bœuf",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/Real_salmon.webp",
-      "id": "alimentation-06",
-      "categorie": "Alimentation",
-      "produit": "Humid Food – Real Beef",
-      "description": "Notre nouveau dîner préféré : saumon",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/Real_Turkey.webp",
-      "id": "alimentation-07",
-      "categorie": "Alimentation",
-      "produit": "Humid Food – Real Beef",
-      "description": "Notre nouveau dîner préféré : pâté de dinde",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/Happy-Farm-poulet-carottes.webp",
-      "id": "alimentation-08",
-      "categorie": "Alimentation",
-      "produit": "Snack pour chiens Poulet et Carottes - Happy Farm",
-      "description": "",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/Happy-Farm-canard-courgettes.webp",
-      "id": "alimentation-09",
-      "categorie": "Alimentation",
-      "produit": "Snack pour chiens Canard et Courgettes - Happy Farm",
-      "description": "",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/accessoires/Accessoires_1.webp",
+      "image": "/images/produits/accessoires/gamelles.webp",
       "id": "accessoire-01",
       "categorie": "Accessoires",
-      "produit": "Gamelle 1",
-      "description": "Description gamelle 1",
+      "produit": "Gamelles",
+      "description": "Nos ravissantes gamelles en céramique sont idéales pour les repas de vos animaux de compagnie. Elles sont disponibles en plusieurs coloris et motifs, et sont conçues pour être à la fois esthétiques et pratiques.",
       "description_longue": ""
     },
     {
-      "image": "/images/produits/accessoires/Accessoires_2.webp",
-      "id": "accessoire-02",
-      "categorie": "Accessoires",
-      "produit": "Gamelle 2",
-      "description": "Description gamelle 1",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/accessoires/Accessoires_3.webp",
-      "id": "accessoire-03",
-      "categorie": "Accessoires",
-      "produit": "Gamelle 3",
-      "description": "Description gamelle 1",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/jeux/pizza.webp",
+      "image": "/images/produits/jeux/jeux.webp",
       "id": "jeux-01",
       "categorie": "Jeux",
-      "produit": "NomNomz® – Part Pizza",
-      "description": "",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/jeux/jouets.webp",
-      "id": "jeux-02",
-      "categorie": "Jeux",
-      "produit": "Jouet corde renforcée",
-      "description": "Un jouet solide pour les mâchoires puissantes.",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/jeux/jouets.webp",
-      "id": "jeux-03",
-      "categorie": "Jeux",
-      "produit": "Jouet 2",
-      "description": "description jeux 2.",
+      "produit": "Gamme de jeux",
+      "description": "Une gamme de jeux épatants et ludiques pour les chiens. Ils sont conçus pour stimuler l'esprit de votre animal",
       "description_longue": ""
     }
   ]

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import PageTitle from '@/components/headers/PageTitle';
+import ServiceSommaire from '@/components/ui/buttons/ServiceSommaire'
+import GarderieSection from "@/components/GarderieSection";
 import NextBloc from "@/components/NextBloc";
 
 export const metadata: Metadata = {
@@ -30,6 +32,8 @@ const ServicesPage = () => {
     return (
       <section className="h-full">
         <PageTitle />
+        <ServiceSommaire />
+        <GarderieSection />
         <NextBloc />
       </section>
     )

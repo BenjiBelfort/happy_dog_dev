@@ -1,5 +1,6 @@
 import { PiBoneFill } from "react-icons/pi";
 import Image from 'next/image';
+import LinkButton from "../ui/buttons/LinkButton";
 
 const ProductsBloc = () => {
   return (
@@ -28,7 +29,11 @@ const ProductsBloc = () => {
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Alimentation</h3>
                     <p className="my-4">Découvrez notre gamme de compléments alimentaires, croquettes et friandises fabriqués en France 🇫🇷.</p>
-
+                    <LinkButton
+                        text="Découvrir"
+                        href="/produits#alimentation"
+                        bgColor="bg-sky-600"
+                    />
                 </div>
             </div>
         </div>

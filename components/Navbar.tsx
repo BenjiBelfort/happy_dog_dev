@@ -19,7 +19,7 @@ export default function Navbar() {
 
   const links = [
     { path: '/', label: 'Accueil' },
-    { path: '/#products', label: 'Produits' },
+    { path: '/produits', label: 'Produits' },
     { path: '/services', label: 'Services' },
     { path: '/#contact', label: 'Contact' },
   ];

@@ -1,38 +1,47 @@
 import Image from "next/image";
 import { Product } from "@/app/types/Product";
 
-interface ProductCardProps extends Product {
-  onClick?: () => void;
-}
+type ProductCardProps = Pick<Product, "produit" | "description" | "image" | "categorie">;
+
 
 const ProductCard: React.FC<ProductCardProps> = ({
   produit,
   description,
   image,
   categorie,
-  onClick,
 }) => {
   const bgColor = getBgColor(categorie);
 
   return (
-    <button
-      onClick={onClick}
-      className={`text-left w-full cursor-pointer shadow-md rounded-2xl overflow-hidden flex flex-col transition-transform duration-200 hover:scale-[1.05] focus:outline-none ${bgColor}`}
-    >
-      <div className="w-full h-62 relative">
-        <Image
-          src={image}
-          alt={produit}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
+    <div className="w-full flex flex-col items-center">
+      {/* Image container avec marges sur mobile */}
+      <div className="w-full max-w-3xl px-4 sm:px-6 md:px-0">
+        <div className="relative w-full">
+          <Image
+            src={image}
+            alt={produit}
+            width={1200}
+            height={700}
+            className="w-full h-auto object-cover"
+          />
+        </div>
       </div>
-      <div className="p-2">
-        <h3 className="text-xl font-bold">{produit}</h3>
-        <p className="mb-2 text-sm lg:text-base">{description}</p>
+
+      {/* Bloc infos : titre + description, avec ombre */}
+      <div className="w-full max-w-2xl px-4 sm:px-6 md:px-0">
+        <div className="shadow-lg/30 rounded-xl overflow-hidden">
+          {/* Titre */}
+          <div className={`w-full text-center py-4 ${bgColor} bg-[url('/pattern/pattern-dots.png')] bg-repeat`}>
+            <h3 className="text-2xl font-bold">{produit}</h3>
+          </div>
+
+          {/* Description */}
+          <div className="w-full bg-white px-4 py-3">
+            <p className="text-sm lg:text-base">{description}</p>
+          </div>
+        </div>
       </div>
-    </button>
+    </div>
   );
 };
 
