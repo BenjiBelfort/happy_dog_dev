@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import PageTitle from '@/components/headers/PageTitle';
 import ServiceSommaire from '@/components/ui/buttons/ServiceSommaire'
+import PointSeparator from "@/components/ui/PointSeparator";
 import GarderieSection from "@/components/GarderieSection";
-import NextBloc from "@/components/NextBloc";
+import ToilettageSection from "@/components/ToilettageSection";
 
 export const metadata: Metadata = {
   title: 'Services pour chiens heureux à Belfort | Happy Dog',
@@ -30,12 +31,14 @@ export const metadata: Metadata = {
 
 const ServicesPage = () => {
     return (
-      <section className="h-full">
+      <main className="h-full">
         <PageTitle />
         <ServiceSommaire />
+        <PointSeparator />
         <GarderieSection />
-        <NextBloc />
-      </section>
+        <PointSeparator />
+        <ToilettageSection />
+      </main>
     )
   }
   

@@ -12,7 +12,7 @@ const AccessoiresSection = () => {
             height={63}
             className="w-80 mx-auto my-2 drop-shadow-lg/30"
         /> */}
-      <p className="md:text-xl max-w-2xl text-center my-8">Description de la section accessoires, paragraphe moyennement long incluant des mots clés du type <span className="font-bold">Croquettes pour chiens heureux</span> par exemple, ou <span className="font-bold">alimentation Made in France 🇫🇷</span>, ou valeurs anti-gaspi, etc...</p>
+      <p className="md:text-xl max-w-2xl text-center my-8 mx-2">Description de la section accessoires, paragraphe moyennement long incluant des mots clés du type <span className="font-bold">Croquettes pour chiens heureux</span> par exemple, ou <span className="font-bold">alimentation Made in France 🇫🇷</span>, ou valeurs anti-gaspi, etc...</p>
       <ProductsGrid categorie="Accessoires" />
     </section>
   );

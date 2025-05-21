@@ -6,6 +6,7 @@ import ProductsBloc2 from '@/components/blocs/ProductsBloc2';
 import ProductsBloc3 from '@/components/blocs/ProductsBloc3';
 import ProductsBloc4 from '@/components/blocs/ProductsBloc4';
 import ProductsBloc5 from '@/components/blocs/ProductsBloc5';
+import PointSeparator from "@/components/ui/PointSeparator";
 import Testimony from '@/components/Testimony';
 import VioletteBloc from '@/components/blocs/VioletteBloc';
 import Partenaires from '@/components/Partenaires';
@@ -27,6 +28,7 @@ const Home = () => {
       <ProductsBloc3 />
       <ProductsBloc4 />
       <ProductsBloc5 />
+      <PointSeparator />
       <Testimony />
       <Guirlande />
       <VioletteBloc />

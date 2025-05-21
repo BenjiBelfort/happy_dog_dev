@@ -1,10 +1,10 @@
 import { Metadata } from "next"; 
 import PageTitle from '@/components/headers/PageTitle';
-import ProductSommaire from '@/components/ui/buttons/ProductSommaire'
+import ProductSommaire from '@/components/ui/buttons/ProductSommaire';
+import PointSeparator from "@/components/ui/PointSeparator";
 import AlimentationSection from "@/components/AlimentationSection";
 import AccessoiresSection from "@/components/AccessoiresSection";
 import JeuxSection from "@/components/JeuxSection";
-import NextBloc from "@/components/NextBloc";
 
 
 export const metadata: Metadata = {
@@ -33,14 +33,17 @@ export const metadata: Metadata = {
 
 const ProduitsPage = () => {
   return (
-    <section className="h-full">
+    <main className="h-full">
       <PageTitle />
       <ProductSommaire />
+      <PointSeparator />
       <AlimentationSection />
+      <PointSeparator />
       <AccessoiresSection />
+      <PointSeparator />
       <JeuxSection />
-      <NextBloc />
-    </section>
+      <PointSeparator />
+    </main>
   )
 }
 
