@@ -3,7 +3,7 @@
       "image": "/images/produits/alimentation/4-produits-scrapsWeb.webp",
       "id": "alimentation-01",
       "categorie": "Alimentation",
-      "produit": "Scraps Friandises",
+      "produit": "Scraps Friandises®",
       "description": "Avec SCRAPS Gourmet, les moments de récompense de vos animaux de compagnie deviennent de purs moments de plaisir sain. Nous nous engageons dans un cercle vertueux de production et d’innovation anti-gaspillage. Nos biscuits made in France, naturels et gourmands promettent à vos fidèles compagnons des encas naturels, savoureux, croustillants et haut-de-gamme.",
       "description_longue": ""
     },
@@ -19,13 +19,21 @@
       "image": "/images/produits/alimentation/happy-farm-snacks.webp",
       "id": "alimentation-03",
       "categorie": "Alimentation",
-      "produit": "Snack pour chiens - Happy Farm",
+      "produit": "Snack pour chiens - Happy Farm®",
       "description": "Gamme complète",
+      "description_longue": ""
+    },
+        {
+      "image": "/images/produits/accessoires/gamme-puralia.webp",
+      "id": "accessoire-01",
+      "categorie": "Accessoires",
+      "produit": "Gamme Puralia®",
+      "description": "Une gamme de shampoings, formulée avec la plus haute exigence cosmétique et composée de plus de 95 % d'ingrédients naturels, pour offrir à votre animal un réel confort lors de son toilettage.",
       "description_longue": ""
     },
     {
       "image": "/images/produits/accessoires/gamelles.webp",
-      "id": "accessoire-01",
+      "id": "accessoire-02",
       "categorie": "Accessoires",
       "produit": "Gamelles",
       "description": "Nos ravissantes gamelles en céramique sont idéales pour les repas de vos animaux de compagnie. Elles sont disponibles en plusieurs coloris et motifs, et sont conçues pour être à la fois esthétiques et pratiques.",

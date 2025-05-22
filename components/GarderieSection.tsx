@@ -98,7 +98,8 @@ const GarderieSection = () => {
             height={63}
             className="w-54 mx-auto my-2"
           />
-          <p className="text-center mb-4">Les tarifs sont dégressifs en fonction de la durée de garde</p>
+          <p className="text-center mb-4">Les tarifs sont dégressifs en fonction de la durée de garde.</p>
+          
           <div className="grid grid-cols-2 items-center gap-y-6 md:px-24">
             <div>
               <p className="text-lg font-semibold">L&apos;heure</p>
