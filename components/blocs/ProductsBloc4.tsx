@@ -19,7 +19,7 @@ const ProductsBloc4 = () => {
                     <p className="my-4">Profitez d&apos;un espace convivial pour votre animal, le temps d&apos;un rendez-vous.</p>
                     <LinkButton
                         text="Découvrir"
-                        href="/services"
+                        href="/services#garderie"
                         bgColor="bg-orange-600"
                     />
                 </div>

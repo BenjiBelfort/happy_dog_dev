@@ -23,7 +23,7 @@
       "description": "Gamme complète",
       "description_longue": ""
     },
-        {
+    {
       "image": "/images/produits/accessoires/gamme-puralia.webp",
       "id": "accessoire-01",
       "categorie": "Accessoires",
@@ -32,8 +32,16 @@
       "description_longue": ""
     },
     {
-      "image": "/images/produits/accessoires/gamelles.webp",
+      "image": "/images/produits/accessoires/couchage.webp",
       "id": "accessoire-02",
+      "categorie": "Accessoires",
+      "produit": "Gamme Couchage",
+      "description": "Notre gamme de couchages pour chiens allie confort, qualité et style. Que ce soit pour une sieste rapide ou une longue nuit, chaque coussin, panier ou matelas est pensé pour le bien-être de votre compagnon à quatre pattes.",
+      "description_longue": ""
+    },
+    {
+      "image": "/images/produits/accessoires/gamelles.webp",
+      "id": "accessoire-03",
       "categorie": "Accessoires",
       "produit": "Gamelles",
       "description": "Nos ravissantes gamelles en céramique sont idéales pour les repas de vos animaux de compagnie. Elles sont disponibles en plusieurs coloris et motifs, et sont conçues pour être à la fois esthétiques et pratiques.",

@@ -31,7 +31,7 @@ const ProductsBloc5 = () => {
                     <p className="my-4">Offrez à votre compagnon une séance beauté entre les mains expertes de Laure : <span className="font-bold">Au P&apos;tit Bonheur Canin</span> !</p>
                     <LinkButton
                         text="Découvrir"
-                        href="/services"
+                        href="/services#toilettage"
                         bgColor="bg-stone-600"
                     />
                 </div>
