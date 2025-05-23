@@ -9,7 +9,7 @@ const caveat = Caveat({
 const LaureBloc = () => {
   return (
     <div className="relative max-w-2xl mx-auto p-6 mt-16 shadow-lg/30 flex flex-col sm:flex-row gap-6 md:-rotate-2 bg-[url('/images/backgrounds/papier-texture.webp')] bg-cover bg-center bg-no-repeat">
-      <div className="absolute -top-8 sm:-top-4 sm:-right-3 w-full h-100 sm:w-52 sm:h-62 overflow-hidden shadow-lg border-10 border-white rotate-2">
+      <div className="absolute -top-8 sm:-top-4 sm:-right-3 max-w-[90%] w-full h-100 sm:w-52 sm:h-62 overflow-hidden shadow-lg border-10 border-white -rotate-1 md:rotate-2">
         <Image
           src="/images/services/toilettage/Laure.webp"
           alt="Laure, toiletteuse experte"

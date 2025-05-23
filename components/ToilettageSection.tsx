@@ -23,33 +23,33 @@ const ToiletageSection = () => {
             <Image src="/images/services/toilettage/toilettage2.webp" alt="Laure pratiquant un toilettage chez Happy Dog Belfort" width={300} height={200} className="border-10 md:border-16 border-white shadow-lg/50" />
           </div>
         </div>
-
-        {/* toilettage */}
-        <div className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-12">
-          {/* Image */}
-          <div className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1">
-            <Image
-              src="/images/services/toilettage/avant.webp"
-              alt="Bain pour chien heureux à Belfort"
-              fill
-              className="object-cover border-10 md:border-16 border-white shadow-lg/30 "
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-  
-          {/* Encadré */}
-          <div className="relative md:absolute md:left-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
-            <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
-              Bain
-            </h3>
-            <p>
-              Offrez à votre compagnon un moment de détente et de soin avec un bain complet : shampoing adapté, rinçage doux, séchage minutieux et beaucoup de câlins pour repartir tout propre et heureux.
-            </p>
-          </div>
-        </div>
-        
       </div>
 
+      {/* Bain */}
+      <div className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-12">
+        {/* Image */}
+        <div className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1">
+          <Image
+            src="/images/services/toilettage/avant.webp"
+            alt="Bain pour chien heureux à Belfort"
+            fill
+            className="object-cover border-10 md:border-16 border-white shadow-lg/30 "
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+
+        {/* Encadré */}
+        <div className="relative md:absolute md:left-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
+          <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
+            Bain
+          </h3>
+          <p>
+            Offrez à votre compagnon un moment de détente et de soin avec un bain complet : shampoing adapté, rinçage doux, séchage minutieux et beaucoup de câlins pour repartir tout propre et heureux.
+          </p>
+        </div>
+      </div>
+
+      {/* Toilettage */}
       <div className="relative w-full max-w-5xl flex flex-col items-center md:flex-row-reverse md:items-start md:justify-between md:gap-8 mt-4 md:-mt-8 lg:-mt-10">
         {/* Image */}
         <div className="relative w-full md:w-4/7 aspect-[4/3]">
