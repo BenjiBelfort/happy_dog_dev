@@ -38,6 +38,7 @@ const ServicesPage = () => {
         <GarderieSection />
         <PointSeparator />
         <ToilettageSection />
+        <PointSeparator />
       </main>
     )
   }

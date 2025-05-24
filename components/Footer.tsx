@@ -14,6 +14,7 @@ const Footer = () => {
           alt="Patte de chien Happy Dog"
           width={14}
           height={14}
+          style={{ height: "auto" }}
         />
         <span className="font-bold">DOG</span>
       </div>

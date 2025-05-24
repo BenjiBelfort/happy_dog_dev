@@ -11,20 +11,23 @@
 }
 
 /* styles/globals.css */
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(#f8ffe6, #fde68a);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: light;
-    background-color: #f8ffe6; /* ou toute autre couleur de fond claire */
+    background-color: #f8ffe6;
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: var(--font-libre-franklin), sans-serif;
   overflow-x: hidden;
+  min-height: 100vh;
 }
   
 h1, h2, h3, h4, h5 {
