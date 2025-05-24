@@ -9,7 +9,7 @@ const caveat = Caveat({
 const LaureBloc = () => {
   return (
     <div className="relative max-w-2xl mx-auto p-6 mt-16 shadow-lg/30 flex flex-col sm:flex-row gap-6 md:-rotate-2 bg-[url('/images/backgrounds/papier-texture.webp')] bg-cover bg-center bg-no-repeat">
-      <div className="absolute -top-8 sm:-top-4 sm:-right-3 max-w-[90%] w-full h-100 sm:w-52 sm:h-62 overflow-hidden shadow-lg border-10 border-white -rotate-1 md:rotate-2">
+      <div className="absolute -top-4 md:-top-4 sm:right-2 md:-right-12 max-w-[90%] w-full h-70 sm:w-48 sm:h-48 md:w-62 md:h-62 overflow-hidden shadow-lg border-10 border-white -rotate-1 md:rotate-3">
         <Image
           src="/images/services/toilettage/Laure.webp"
           alt="Laure, toiletteuse experte"
@@ -20,7 +20,7 @@ const LaureBloc = () => {
 
       {/* Contenu texte */}
       <div className={caveat.className}>
-        <h6 className="text-3xl sm:text-4xl font-bold mt-90 sm:mt-4 mb-6 sm:px-8">Bonjour, je suis Laure</h6>
+        <h6 className="text-3xl sm:text-4xl font-bold mt-65 sm:mt-4 mb-6 sm:px-8">Bonjour, je suis Laure</h6>
         <div className="flex-1 sm:max-w-[65%] md:max-w-[75%]">
             <p className="text-2xl/10 md:text-3xl/10 pb-2">
                 Après une reconversion professionnelle, j’ai obtenu mon diplôme de toilettage en 2010.
