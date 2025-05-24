@@ -16,7 +16,7 @@ const GarderieSection = () => {
   const isInView3 = useInView(ref3, { once: true, margin: "-100px" });
 
   return (
-    <section id="garderie" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24">
+    <section id="garderie" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24 overflow-hidden">
       <h2 className="text-vert-fonce text-3xl sm:text-4xl font-bold text-center">Garderie de jour</h2>
 
       <p className="md:text-xl max-w-2xl text-center my-8 mx-2 mb-12">
