@@ -38,7 +38,7 @@ const sections: SectionItem[] = [
 
 const ServiceSommaire: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center max-w-4xl items-center gap-3 md:gap-10 my-4 md:my-12 px-4 mx-auto">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10 my-4 md:my-12 px-4 mx-auto overflow-hidden">
       {sections.map(({ section, href, bgColor, icon, iconColor }, index) => {
       const isEven = index % 2 === 0;
 
@@ -48,7 +48,7 @@ const ServiceSommaire: React.FC = () => {
           initial={{ opacity: 0, x: isEven ? -100 : 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="bg-slate-500/80 rounded-2xl md:rounded-3xl p-2 sm:p-3 w-full relative"
+          className="bg-slate-500/80 rounded-2xl md:rounded-3xl p-2 sm:p-3 w-full sm:w-96 relative"
         >
           <div className="bg-white rounded-xl px-2 sm:px-4 md:p-6 flex flex-row md:flex-col items-center justify-between shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat">
             <span className={`hidden md:block py-3 ${iconColor}`}>{icon}</span>
