@@ -18,7 +18,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = ({ categorie }) => {
 
     return (
       <>
-        <div className="max-w-3xl p-4 lg:p-0 grid grid-cols-1 gap-6 w-full">
+        <div className="max-w-3xl p-2 lg:p-0 grid grid-cols-1 gap-6 w-full">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}

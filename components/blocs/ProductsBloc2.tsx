@@ -1,4 +1,4 @@
-import { FaVest } from "react-icons/fa6";
+import { GiSpiralLollipop } from "react-icons/gi";
 import Image from 'next/image';
 import LinkButton from "../ui/buttons/LinkButton";
 
@@ -11,7 +11,7 @@ const ProductsBloc2 = () => {
             <div className="bg-slate-500/80 rounded-3xl p-3 my-2 md:my-12 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
                     <span className="py-4 text-slate-500">
-                        <FaVest size={48} />
+                        <GiSpiralLollipop size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Accessoires</h3>
                     <p className="my-4">Une gamme d&apos;accéssoires pour le plaisir de nos toutous.</p>

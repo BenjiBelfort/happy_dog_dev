@@ -1,58 +1,98 @@
 [
-    {
-      "image": "/images/produits/alimentation/4-produits-scrapsWeb.webp",
-      "id": "alimentation-01",
-      "categorie": "Alimentation",
-      "produit": "Scraps Friandises®",
-      "description": "Avec SCRAPS Gourmet, les moments de récompense de vos animaux de compagnie deviennent de purs moments de plaisir sain. Nous nous engageons dans un cercle vertueux de production et d’innovation anti-gaspillage. Nos biscuits made in France, naturels et gourmands promettent à vos fidèles compagnons des encas naturels, savoureux, croustillants et haut-de-gamme.",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/cookas-cookies.webp",
-      "id": "alimentation-02",
-      "categorie": "Alimentation",
-      "produit": "Cooka's Cookies – Humid Food",
-      "description": "Notre nouveau dîner préféré",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/alimentation/happy-farm-snacks.webp",
-      "id": "alimentation-03",
-      "categorie": "Alimentation",
-      "produit": "Snack pour chiens - Happy Farm®",
-      "description": "Gamme complète",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/accessoires/gamme-puralia.webp",
-      "id": "accessoire-01",
-      "categorie": "Accessoires",
-      "produit": "Gamme Puralia®",
-      "description": "Une gamme de shampoings, formulée avec la plus haute exigence cosmétique et composée de plus de 95 % d'ingrédients naturels, pour offrir à votre animal un réel confort lors de son toilettage.",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/accessoires/couchage.webp",
-      "id": "accessoire-02",
-      "categorie": "Accessoires",
-      "produit": "Gamme Couchage",
-      "description": "Notre gamme de couchages pour chiens allie confort, qualité et style. Que ce soit pour une sieste rapide ou une longue nuit, chaque coussin, panier ou matelas est pensé pour le bien-être de votre compagnon à quatre pattes.",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/accessoires/gamelles.webp",
-      "id": "accessoire-03",
-      "categorie": "Accessoires",
-      "produit": "Gamelles",
-      "description": "Nos ravissantes gamelles en céramique sont idéales pour les repas de vos animaux de compagnie. Elles sont disponibles en plusieurs coloris et motifs, et sont conçues pour être à la fois esthétiques et pratiques.",
-      "description_longue": ""
-    },
-    {
-      "image": "/images/produits/jeux/jeux.webp",
-      "id": "jeux-01",
-      "categorie": "Jeux",
-      "produit": "Gamme de jeux",
-      "description": "Une gamme de jeux épatants et ludiques pour les chiens. Ils sont conçus pour stimuler l'esprit de votre animal",
-      "description_longue": ""
-    }
-  ]
+  {
+    "image": "/images/produits/alimentation/produits-scraps.webp",
+    "id": "alimentation-01",
+    "categorie": "Alimentation",
+    "produit": "Friandises Scraps®",
+    "description": "Avec Scraps Gourmet, les moments de récompense de vos animaux de compagnie deviennent de purs moments de plaisir sain. Nous nous engageons dans un cercle vertueux de production et d’innovation anti-gaspillage. Nos biscuits made in France, naturels et gourmands promettent à vos fidèles compagnons des encas naturels, savoureux, croustillants et haut-de-gamme.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/alimentation/cookas-cookies.webp",
+    "id": "alimentation-02",
+    "categorie": "Alimentation",
+    "produit": "Cooka's Cookies – Humid Food",
+    "description": "Notre nouveau dîner préféré",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/alimentation/happy-farm-snacks.webp",
+    "id": "alimentation-03",
+    "categorie": "Alimentation",
+    "produit": "Snack pour chiens - Happy Farm Snacks",
+    "description": "Contenues dans un emballage spécial permettant d'économiser de la fraîcheur, les collations aromatisées Happy pour chiens ont une saveur parfumée qui ne demande qu'à être dégustée !",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/alimentation/friandises-lyophilisees.webp",
+    "id": "alimentation-04",
+    "categorie": "Alimentation",
+    "produit": "Friandises Lyophilisées - Kiwi Walker",
+    "description": "Dans un monde où la santé et le bien-être de nos fidèles compagnons sont au cœur de nos préoccupations, offrez-leur une friandise digne de ce nom avec les friandises lyophilisées Kiwi Walker.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/alimentation/lollipop-cookas-cookies.webp",
+    "id": "alimentation-05",
+    "categorie": "Alimentation",
+    "produit": "Cooka's Cookies – Lollipop",
+    "description": "Une friandise croustillante à souhaits aux ingrédients d'origine naturelle, sains, locaux et propres à consommation lentement déshydratés pour préserver goût et nutriments.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/alimentation/batonnets-de-fromage.webp",
+    "id": "alimentation-06",
+    "categorie": "Alimentation",
+    "produit": "Bâtonnets de fromage à mâcher",
+    "description": "Bâtonnet de fromage à mâcher 100 % naturel !",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/accessoires/laisses.webp",
+    "id": "accessoire-01",
+    "categorie": "Accessoires",
+    "produit": "Laisses",
+    "description": "Découvrez notre selection de laisses",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/accessoires/coliers.webp",
+    "id": "accessoire-02",
+    "categorie": "Accessoires",
+    "produit": "Coliers",
+    "description": "Découvrez notre selection de coliers",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/accessoires/jeux.webp",
+    "id": "accessoire-03",
+    "categorie": "Accessoires",
+    "produit": "Gamme de jeux",
+    "description": "Une gamme de jeux épatants et ludiques pour les chiens. Ils sont conçus pour stimuler l'esprit de votre animal",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/accessoires/couchage.webp",
+    "id": "accessoire-04",
+    "categorie": "Accessoires",
+    "produit": "Gamme Couchage",
+    "description": "Notre gamme de couchages pour chiens allie confort, qualité et style. Que ce soit pour une sieste rapide ou une longue nuit, chaque coussin, panier ou matelas est pensé pour le bien-être de votre compagnon à quatre pattes.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/accessoires/gamelles.webp",
+    "id": "accessoire-05",
+    "categorie": "Accessoires",
+    "produit": "Gamelles",
+    "description": "Nos ravissantes gamelles en céramique sont idéales pour les repas de vos animaux de compagnie. Elles sont disponibles en plusieurs coloris et motifs, et sont conçues pour être à la fois esthétiques et pratiques.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/soins/gamme-puralia.webp",
+    "id": "soins-01",
+    "categorie": "Soins",
+    "produit": "Gamme Puralia®",
+    "description": "Une gamme de shampoings, formulée avec la plus haute exigence cosmétique et composée de plus de 95 % d'ingrédients naturels, pour offrir à votre animal un réel confort lors de son toilettage.",
+    "description_longue": ""
+  }
+]

@@ -1,4 +1,4 @@
-import { GiSpiralLollipop } from "react-icons/gi";
+import { FaPumpSoap } from "react-icons/fa";
 import Image from 'next/image';
 import LinkButton from "../ui/buttons/LinkButton";
 
@@ -24,13 +24,13 @@ const ProductsBloc3 = () => {
             <div className="bg-slate-500/80 rounded-3xl p-3 my-2 md:my-12 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
                     <span className="py-4 text-rose-500">
-                        <GiSpiralLollipop size={48} />
+                        <FaPumpSoap size={48} />
                     </span>
-                    <h3 className="text-3xl sm:text-4xl font-bold">Jeux</h3>
-                    <p className="my-4">D&apos;élégants jouets<br /> pour votre ami.</p>
+                    <h3 className="text-3xl sm:text-4xl font-bold">Soins</h3>
+                    <p className="my-4">Une gamme de soins bio pour la toilette de votre ami.</p>
                     <LinkButton
                         text="Découvrir"
-                        href="/produits#jeux"
+                        href="/produits#soins"
                         bgColor="bg-rose-600"
                     />
                 </div>

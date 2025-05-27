@@ -24,11 +24,11 @@ const VioletteBloc = () => {
         </div>
 
         {/* Partie droite */}
-        <div className="md:basis-1/2 w-[300px] h-auto md:w-50 md:h-96 relative border-8 md:border-14 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-mt-12">
+        <div className="md:basis-1/2 w-[300px] h-auto md:w-50 relative border-8 md:border-14 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-mt-12">
             <Image
                 src="/images/violette.webp"
                 alt="Violette et Vicky"
-                width={518}
+                width={800}
                 height={800}
                 className="object-cover"
             />

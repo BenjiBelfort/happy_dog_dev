@@ -15,11 +15,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div className="w-full flex flex-col items-center">
       {/* Image container avec marges sur mobile */}
-      <div className="w-full max-w-3xl px-4 sm:px-6 md:px-0">
-        <div className="relative w-full">
+      <div className="w-full sm:px-6 md:px-0">
+        <div className="relative w-full border-10 md:border-16 border-white bg-yellow-100 shadow-lg/30">
           <Image
             src={image}
-            alt={produit}
+            alt={`{produit} - chez Happy Dog Belfort`}
             width={1200}
             height={700}
             className="w-full h-auto object-cover"
@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       {/* Bloc infos : titre + description, avec ombre */}
-      <div className="w-full max-w-2xl px-4 sm:px-6 md:px-0">
+      <div className="w-full max-w-2xl px-4 sm:px-6 md:px-0 mb-6 sm:mb-10">
         <div className="shadow-lg/30 rounded-xl overflow-hidden">
           {/* Titre */}
           <div className={`w-full text-center py-4 ${bgColor} bg-[url('/pattern/pattern-dots.png')] bg-repeat`}>
@@ -51,7 +51,7 @@ const getBgColor = (categorie: string): string => {
       return "bg-sky-300";
     case "accessoires":
       return "bg-slate-300";
-    case "jeux":
+    case "soins":
       return "bg-rose-300";
     default:
       return "bg-gray-300";

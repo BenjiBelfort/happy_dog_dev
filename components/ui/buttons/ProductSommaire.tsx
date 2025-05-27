@@ -2,7 +2,7 @@
 
 import React from "react";
 import { PiBoneFill } from "react-icons/pi";
-import { FaVest } from "react-icons/fa6";
+import { FaPumpSoap } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { GiSpiralLollipop } from "react-icons/gi";
 import { Zilla_Slab } from "next/font/google";
@@ -32,14 +32,14 @@ const sections: SectionItem[] = [
     section: "Accessoires",
     href: "#accessoires",
     bgColor: "bg-slate-600",
-    icon: <FaVest size={36} />,
+    icon: <GiSpiralLollipop size={36} />,
     iconColor: "text-slate-500",
   },
   {
-    section: "Jeux",
-    href: "#jeux",
+    section: "Soins",
+    href: "#soins",
     bgColor: "bg-rose-500",
-    icon: <GiSpiralLollipop size={36} />,
+    icon: <FaPumpSoap size={36} />,
     iconColor: "text-rose-500",
   },
 ];

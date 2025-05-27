@@ -10,18 +10,24 @@
     --color-bleu-clair: #d6e3ef;
 }
 
-/* styles/globals.css */
-html {
-  scroll-behavior: smooth;
-  background: linear-gradient(#f8ffe6, #fde68a);
+:root {
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
+/* styles/globals.css */
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+  background-color: #f8ffe6;
+  /* background: linear-gradient(#f8ffe6, #fde68a); */
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: light;
     background-color: #f8ffe6;
   }
-}
+} */
 
 
 body {
