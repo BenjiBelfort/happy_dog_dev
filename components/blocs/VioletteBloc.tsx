@@ -8,7 +8,7 @@ const caveat = Caveat({
 
 const VioletteBloc = () => {
   return (
-    <div id='contact' className="relative max-w-2xl mx-auto p-6 mt-16 shadow-lg/30 flex flex-col sm:flex-row gap-6 md:-rotate-2 bg-[url('/images/backgrounds/papier-texture.webp')] bg-cover bg-center bg-no-repeat">
+    <div id='contact' className="relative max-w-2xl mx-auto p-6 mt-16 shadow-lg/30 flex flex-col sm:flex-row gap-6 md:-rotate-2 bg-[url('/images/backgrounds/papier-texture.webp')] bg-cover bg-center bg-no-repeat scroll-mt-20 ">
       <div className="absolute -top-4 md:-top-4 sm:right-2 md:-right-12 max-w-[90%] w-full h-70 sm:w-48 sm:h-48 md:w-62 md:h-62 overflow-hidden shadow-lg border-10 border-white -rotate-1 md:rotate-3">
         <Image
           src="/images/violette.webp"
