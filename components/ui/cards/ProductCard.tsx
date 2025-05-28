@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       {/* Bloc infos : titre + description, avec ombre */}
       <div className="w-full max-w-2xl px-4 sm:px-6 md:px-0 mb-6 sm:mb-10">
-        <div className="shadow-lg/30 rounded-xl overflow-hidden">
+        <div className="shadow-lg/30 rounded-b-xl overflow-hidden">
           {/* Titre */}
           <div className={`w-full text-center py-4 ${bgColor} bg-[url('/pattern/pattern-dots.png')] bg-repeat`}>
             <h3 className="text-2xl font-bold">{produit}</h3>

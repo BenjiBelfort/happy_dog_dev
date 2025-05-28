@@ -1,40 +1,56 @@
+import Image from "next/image";
+import { Caveat } from "next/font/google";
 
-import Image from 'next/image';
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const VioletteBloc = () => {
   return (
-    <article id='contact' className="relative flex flex-col md:flex-row items-center bg-slate-300 md:rounded-3xl  p-6 shadow-lg/30 bg-[url('/pattern/pattern-dots.png')] bg-repeat max-w-3xl mx-auto my-32 scroll-mt-4 md:scroll-mt-32">
+    <div id='contact' className="relative max-w-2xl mx-auto p-6 mt-16 shadow-lg/30 flex flex-col sm:flex-row gap-6 md:-rotate-2 bg-[url('/images/backgrounds/papier-texture.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute -top-4 md:-top-4 sm:right-2 md:-right-12 max-w-[90%] w-full h-70 sm:w-48 sm:h-48 md:w-62 md:h-62 overflow-hidden shadow-lg border-10 border-white -rotate-1 md:rotate-3">
+        <Image
+          src="/images/violette.webp"
+          alt="Violette et Vicky"
+          fill
+          className="object-cover"
+        />
+      </div>
 
+      <div className={caveat.className}>
+        <h6 className="text-3xl sm:text-4xl font-bold mt-65 sm:mt-4 mb-6 sm:px-8">Bonjour, je suis Violette</h6>
 
-
-        {/* Partie gauche */}
-        <div className="md:basis-1/2 mx-auto text-center p-6">
-            <h3 className="text-3xl sm:text-4xl font-bold">Qui sommes nous ?</h3>
-            <p className="mt-4">Je m&apos;appelle Violette et voici mon acolyte Vicky, ma tornade d&apos;amour, toujours à mes côtés pour vous accueillir dans notre boutique consacrée aux chiens heureux.</p>
-            <Image
-                src="/images/backgrounds/ornement.png"
-                alt="ornement"
-                width={565}
-                height={63}
-                className="w-54 mx-auto my-2 invert"
-            />
-            <p className="">11 rue du Général Roussel, 90000 Belfort</p>
-            <p className="font-bold">06 46 46 76 17</p>
-            <a href="mailto:happydogbelfort@gmail.com" className='underline decoration-slate-500'>happydogbelfort@gmail.com</a>
+        <div className="flex-1 sm:max-w-[65%] md:max-w-[75%]">
+          <p className="text-2xl/10 md:text-3xl/10 pb-2">
+            Et voici ma tornade d&apos;amour, Vicky. Toujours à mes côtés pour vous accueillir dans notre boutique
+            consacrée aux chiens heureux. Ici, tout est pensé pour le bien-être et le plaisir de vos compagnons.
+          </p>
         </div>
 
-        {/* Partie droite */}
-        <div className="md:basis-1/2 w-[300px] h-auto md:w-50 relative border-8 md:border-14 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-mt-12">
-            <Image
-                src="/images/violette.webp"
-                alt="Violette et Vicky"
-                width={800}
-                height={800}
-                className="object-cover"
-            />
-        </div>
-        
-    </article>
+        <p className="text-2xl/10 md:text-3xl/10">
+          Venez découvrir notre espace garderie de jour, notre boutique spécialisée et notre coin toilettage.
+          <br />
+          À très vite chez <span className="font-bold">Happy Dog</span> !
+        </p>
+
+        <p className="font-bold text-4xl text-center sm:text-right px-8 mt-6 sm:mt-0">
+          Violette & Vicky
+        </p>
+
+        <p className="text-2xl text-center mt-6">
+          Retrouvez-nous au
+          <br />
+          <span className="font-bold">11 rue du Général Roussel, 90000 Belfort</span>
+          <br />
+          <span className="font-bold">06 46 46 76 17</span>
+          <br />
+          <a href="mailto:happydogbelfort@gmail.com" className="underline decoration-slate-500">
+            happydogbelfort@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
   );
 };
 

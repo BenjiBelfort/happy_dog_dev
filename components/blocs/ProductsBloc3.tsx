@@ -27,7 +27,7 @@ const ProductsBloc3 = () => {
                         <FaPumpSoap size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Soins</h3>
-                    <p className="my-4">Une gamme de soins bio pour la toilette de votre ami.</p>
+                    <p className="my-4">Une gamme de soins 100 % fabriqués en France pour la toilette de votre ami.</p>
                     <LinkButton
                         text="Découvrir"
                         href="/produits#soins"

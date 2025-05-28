@@ -17,12 +17,14 @@ const Home = () => {
     <>
       <MainLogo />
       <H1Bloc />
-      <TextBloc
-        texts={[
-          "Pour le plaisir de vos compagnons à quatre pattes,",
-          "venez découvrir notre espace garderie de jour et notre boutique canine !",
-        ]}
-      />
+      <div className="mt-28">
+        <TextBloc
+          texts={[
+            "Pour le plaisir de vos compagnons à quatre pattes, venez découvrir notre garderie de jour, notre espace toilettage et notre boutique canine,",
+            "pensés pour leur bien-être et votre tranquillité.",
+          ]}
+        />
+      </div>
       <ProductsBloc />
       <ProductsBloc2 />
       <ProductsBloc3 />

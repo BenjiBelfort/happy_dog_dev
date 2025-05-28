@@ -3,7 +3,7 @@ import ProductsGrid from "@/components/ui/grids/ProductsGrid";
 
 const AccessoiresSection = () => {
   return (
-    <section id="accessoires" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24">
+    <section id="accessoires" className="flex flex-col items-center mt-12 scroll-mt-20">
       <h3 className="text-vert-fonce text-3xl sm:text-4xl font-bold text-center">Accessoires</h3>
         {/* <Image
             src="/images/backgrounds/guirlande.png"

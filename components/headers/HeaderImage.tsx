@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import React from "react";
 
 const HeaderImage = () => {
   const pathname = usePathname();
