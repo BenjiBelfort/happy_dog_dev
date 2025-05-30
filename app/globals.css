@@ -19,9 +19,14 @@ html {
   color-scheme: light;
   scroll-behavior: smooth;
   background-color: #f8ffe6;
+  scroll-padding-top: 80px;
   /* background: linear-gradient(#f8ffe6, #fde68a); */
 }
 
+:target {
+  /* même valeur que ton header */
+  scroll-margin-top: 80px;
+}
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: light;

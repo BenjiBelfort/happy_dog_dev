@@ -1,7 +1,11 @@
+"use client";
+
 
 import Image from "next/image";
 import ToilettageTarif from "@/components/tarifs/ToilettageTarif";
 import LaureBloc from "@/components/blocs/LaureBloc";
+import { motion } from "framer-motion";
+
 
 const ToiletageSection = () => {
   return (
@@ -14,14 +18,72 @@ const ToiletageSection = () => {
       <div className="max-w-5xl mx-auto">
         <div className="flex justify-center items-center">
           <div className="hidden md:flex w-full justify-between gap-x-6">
-            <Image src="/images/services/toilettage/toilettage1.webp" alt="Cabine de toilettage chez Happy Dog Belfort" width={300} height={200} className="border-10 md:border-16 border-white shadow-lg/50 -rotate-2" />
-            <Image src="/images/services/toilettage/toilettage2.webp" alt="Laure pratiquant un toilettage" width={300} height={200} className="border-10 md:border-16 border-white shadow-lg/50" />
-            <Image src="/images/services/toilettage/toilettage3.webp" alt="Un chien tout beau tout propre" width={300} height={200} className="border-10 md:border-16 border-white shadow-lg/50 rotate-2" />
+            {/* Gauche */}
+            <motion.div
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <Image
+                src="/images/services/toilettage/toilettage1.webp"
+                alt="Cabine de toilettage chez Happy Dog Belfort"
+                width={300}
+                height={200}
+                className="border-10 md:border-16 border-white shadow-lg/50 -rotate-2"
+              />
+            </motion.div>
+
+            {/* Centre */}
+            <motion.div
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <Image
+                src="/images/services/toilettage/toilettage2.webp"
+                alt="Laure pratiquant un toilettage"
+                width={300}
+                height={200}
+                className="border-10 md:border-16 border-white shadow-lg/50"
+              />
+            </motion.div>
+
+            {/* Droite */}
+            <motion.div
+              initial={{ scale: 0, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.6 }}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              <Image
+                src="/images/services/toilettage/toilettage3.webp"
+                alt="Un chien tout beau tout propre"
+                width={300}
+                height={200}
+                className="border-10 md:border-16 border-white shadow-lg/50 rotate-2"
+              />
+            </motion.div>
           </div>
 
-          <div className="flex md:hidden justify-center w-full">
-            <Image src="/images/services/toilettage/toilettage2.webp" alt="Laure pratiquant un toilettage chez Happy Dog Belfort" width={300} height={200} className="border-10 md:border-16 border-white shadow-lg/50" />
-          </div>
+
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            className="flex md:hidden justify-center w-full"
+          >
+            <Image
+              src="/images/services/toilettage/toilettage2.webp"
+              alt="Laure pratiquant un toilettage"
+              width={300}
+              height={200}
+              className="border-10 md:border-16 border-white shadow-lg/50"
+            />
+          </motion.div>
+
         </div>
       </div>
 
@@ -90,3 +152,4 @@ const ToiletageSection = () => {
 };
 
 export default ToiletageSection;
+

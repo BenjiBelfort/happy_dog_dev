@@ -7,8 +7,9 @@ import "./globals.css";
 import BackgroundWrapper from "@/components/patterns/BackgroundWrapper";
 import HeaderImage from "@/components/headers/HeaderImage";
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 
 const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
