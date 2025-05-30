@@ -4,10 +4,16 @@
 import Image from "next/image";
 import ToilettageTarif from "@/components/tarifs/ToilettageTarif";
 import LaureBloc from "@/components/blocs/LaureBloc";
-import { motion } from "framer-motion";
-
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const ToiletageSection = () => {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+
+  const isInView1 = useInView(ref1, { once: true, margin: "-100px" });
+  const isInView2 = useInView(ref2, { once: true, margin: "-100px" });
+
   return (
     <section id="toilettage" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24">
       <h2 className="text-vert-fonce text-3xl sm:text-4xl font-bold text-center">Bain et toilettage</h2>
@@ -88,33 +94,48 @@ const ToiletageSection = () => {
       </div>
 
       {/* Bain */}
-      <div className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-12">
+      <div ref={ref1} className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-12">
         {/* Image */}
-        <div className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={isInView1 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1"
+        >
           <Image
             src="/images/services/toilettage/avant.webp"
-            alt="Bain pour chien heureux à Belfort"
+            alt="Un bon bain pour un chien heureux à Belfort"
             fill
             className="object-cover border-10 md:border-16 border-white shadow-lg/30 "
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-        </div>
+        </motion.div>
 
         {/* Encadré */}
-        <div className="relative md:absolute md:left-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={isInView1 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          className="relative md:absolute md:left-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0"
+        >
           <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
-            Bain
+            Des activités pour ne jamais s’ennuyer
           </h3>
           <p>
             Offrez à votre compagnon un moment de détente et de soin avec un bain complet : shampoing adapté, rinçage doux, séchage minutieux et beaucoup de câlins pour repartir tout propre et heureux.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Toilettage */}
-      <div className="relative w-full max-w-5xl flex flex-col items-center md:flex-row-reverse md:items-start md:justify-between md:gap-8 mt-4 md:-mt-8 lg:-mt-10">
+      <div ref={ref2} className="relative w-full max-w-5xl flex flex-col items-center md:flex-row-reverse md:items-start md:justify-between md:gap-8 mt-4 md:-mt-8 lg:-mt-10">
         {/* Image */}
-        <div className="relative w-full md:w-4/7 aspect-[4/3]">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative w-full md:w-4/7 aspect-[4/3]"
+        >
           <Image
             src="/images/services/toilettage/apres.webp"
             alt="Coupe, tonte et épilation pour chien heureux à Belfort"
@@ -122,17 +143,21 @@ const ToiletageSection = () => {
             className="object-cover border-10 md:border-16 border-white shadow-lg/30"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-        </div>
+        </motion.div>
 
         {/* Encadré */}
-        <div className="relative md:absolute md:right-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={isInView2 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          className="relative md:absolute md:right-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
           <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
-            Coupe / Tonte / Épilation
+            Du repos et beaucoup de tendresse
           </h3>
           <p>
             Selon le type de poil de votre chien, nous réalisons une coupe aux ciseaux, une tonte ou une épilation douce, pour allier hygiène, confort et esthétisme… toujours dans le respect de l’animal.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <LaureBloc />

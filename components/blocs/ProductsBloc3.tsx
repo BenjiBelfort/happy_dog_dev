@@ -8,9 +8,9 @@ const ProductsBloc3 = () => {
 
         {/* Partie gauche */}
         <div className="md:basis-3/5">
-            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-rotate-2">
+            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-200 shadow-lg/50 overflow-hidden md:-rotate-2">
                 <Image
-                    src=""
+                    src="/images/produits/gamme-puralia.webp"
                     alt="Toilettage"
                     width={518}
                     height={800}
