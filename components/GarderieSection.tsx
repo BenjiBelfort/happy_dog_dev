@@ -91,19 +91,20 @@ const GarderieSection = () => {
 
       {/* balade */}
       <div ref={ref3} className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-4 md:-mt-6 lg:-mt-12">
-        {/* Image */}
+        {/* Image = mettre une video ici à la place de la photo */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={isInView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1"
         >
-          <Image
-            src="/images/services/garderie/garderie3.webp"
-            alt="La garderie des chiens heureux à Belfort"
-            fill
-            className="object-cover border-10 md:border-16 border-white shadow-lg/30 "
-            sizes="(max-width: 768px) 100vw, 50vw"
+          <video
+            src="/images/services/garderie/balade.mp4" // Ton fichier vidéo
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="object-cover w-full h-full border-10 md:border-16 border-white shadow-lg/30"
           />
         </motion.div>
 

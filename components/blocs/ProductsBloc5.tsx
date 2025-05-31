@@ -8,13 +8,13 @@ const ProductsBloc5 = () => {
 
         {/* Partie gauche */}
         <div className="md:basis-3/5">
-            <div className="mb-4 sm:mb-0 h-96 border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-rotate-2">
+            <div className="md:absolute md:top-1/2 md:-translate-y-1/2 mb-4 md:mb-0 h-auto md:h-[105%] md:w-[55%] border-10 md:border-16 border-white bg-yellow-300 shadow-lg/50 overflow-hidden md:-rotate-2">
                 <Image
                     src="/images/produits/toilettage.webp"
                     alt="Toilettage"
                     width={518}
                     height={800}
-                    className="h-96 object-cover"
+                    className="object-cover h-full w-full"
                 />
     
             </div>
@@ -22,7 +22,7 @@ const ProductsBloc5 = () => {
 
         {/* Partie droite */}
         <div className="md:basis-2/5 mx-auto">
-            <div className="bg-slate-500/80 rounded-3xl p-3 my-2 md:my-12 mx-4">
+            <div className="bg-slate-500/80 rounded-3xl p-3 my-2 md:my-4 mx-4">
                 <div className="bg-white rounded-xl p-4 flex flex-col items-center shadow-lg/30">
                     <span className="py-4 text-stone-500">
                         <PiHairDryerFill size={48} />
