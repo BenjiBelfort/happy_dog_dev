@@ -59,7 +59,7 @@
     "image": "/images/produits/accessoires/colliers.webp",
     "id": "accessoire-02",
     "categorie": "Accessoires",
-    "produit": "Colliers",
+    "produit": "Colilers",
     "description": "Un collier, c’est plus qu’un accessoire. C’est une touche de personnalité et de sécurité pour votre chien. Explorez notre collection pour trouver celui qui lui ira à merveille.",
     "description_longue": ""
   },
@@ -101,6 +101,14 @@
     "categorie": "Soins",
     "produit": "Gamme Puralia®",
     "description": "Une gamme de soins comprenant des shampoings, lotions, baumes, sprays anti-tiques et dentifrices, formulés avec la plus haute exigence cosmétique et composés de plus de 95 % d'ingrédients naturels, pour offrir à votre animal un réel confort lors de son toilettage.",
+    "description_longue": ""
+  },
+  {
+    "image": "/images/produits/soins/baume-truffe.webp",
+    "id": "soins-02",
+    "categorie": "Soins",
+    "produit": "Baume truffe Nellumbo",
+    "description": "Apaise, hydrate et répare les truffes sèches, craquelées ou crevassées. Idéal contre la sécheresse, les crevasses et l’hyperkératose.",
     "description_longue": ""
   }
 ]

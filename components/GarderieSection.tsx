@@ -91,7 +91,7 @@ const GarderieSection = () => {
 
       {/* balade */}
       <div ref={ref3} className="relative w-full max-w-5xl flex flex-col items-center md:flex-row md:items-start md:justify-between md:gap-8 mt-4 md:-mt-6 lg:-mt-12">
-        {/* Image = mettre une video ici à la place de la photo */}
+        {/* video */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={isInView3 ? { opacity: 1, y: 0 } : {}}
