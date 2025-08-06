@@ -13,6 +13,27 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  const [showLeftLogo, setShowLeftLogo] = useState<boolean>(pathname !== '/');
+
+  useEffect(() => {
+    // si on est sur la home, on active le listener
+    if (pathname === '/') {
+      const handleScroll = () => {
+        // récupère la hauteur de ta hero (change le sélecteur si besoin)
+        const hero = document.querySelector('.hero') as HTMLElement;
+        const threshold = hero ? hero.clientHeight : window.innerHeight * 0.6;
+        setShowLeftLogo(window.scrollY > threshold);
+      };
+      window.addEventListener('scroll', handleScroll);
+      // trigger une fois au chargement
+      handleScroll();
+      return () => window.removeEventListener('scroll', handleScroll);
+    } else {
+      // sur les autres pages, logo toujours visible
+      setShowLeftLogo(true);
+    }
+  }, [pathname]);
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
   }, [menuOpen]);
@@ -24,35 +45,37 @@ export default function Navbar() {
     { path: '/#contact', label: 'Contact' },
   ];
 
-  const showLeftLogo = pathname !== '/';
 
   return (
     <nav className="bg-vert-clair text-xl text-vert-fonce w-full md:max-w-3xl mx-auto px-6 md:rounded-md sticky top-0 md:top-4 z-20 shadow-lg/30 font-medium">
 
-        {/* Logo en position absolute à gauche, mais en dehors du nav sticky */}
-        {showLeftLogo && (
-          <motion.div
-            className="hidden lg:block absolute -translate-x-36 top-6 -translate-y-1/2 xl:-translate-x-49 xl:top-9 z-20"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{
-              type: 'spring',
-              stiffness: 90,
-              damping: 12,
-              duration: 0.8,
-            }}
-          >
-            <Link href="/" aria-label="Retour à l'accueil">
-              <Image
-                src={logo}
-                alt="Logo Happy Dog"
-                width={70}
-                height={70}
-                className="w-28 xl:w-40 h-auto drop-shadow-lg"
-              />
-            </Link>
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {showLeftLogo && (
+            <motion.div
+              key="left-logo"                      // 👍 obligatoire pour AnimatePresence
+              className="hidden lg:block absolute -translate-x-36 top-6 -translate-y-1/2 xl:-translate-x-49 xl:top-9 z-20"
+              initial={{ scale: 0, opacity: 0 }}   // départ
+              animate={{ scale: 1, opacity: 1 }}   // arrivée
+              exit={{ scale: 0, opacity: 0 }}      // sortie quand showLeftLogo passe à false
+              transition={{
+                type: 'spring',
+                stiffness: 90,
+                damping: 12,
+                duration: 0.8,
+              }}
+            >
+              <Link href="/" aria-label="Retour à l'accueil">
+                <Image
+                  src={logo}
+                  alt="Logo Happy Dog"
+                  width={70}
+                  height={70}
+                  className="w-28 xl:w-40 h-auto drop-shadow-lg"
+                />
+              </Link>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
       <div className="mx-auto">
         {/* Desktop links */}

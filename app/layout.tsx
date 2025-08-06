@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import type { Viewport } from 'next'
 
@@ -9,6 +10,8 @@ import HeaderImage from "@/components/headers/HeaderImage";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+// import ScrollHandler from "@/components/ScrollHandler";
 
 
 const zillaSlab = Zilla_Slab({
@@ -28,19 +31,21 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  userScalable: false,
 }
 
 export const metadata: Metadata = {
   title: 'La boutique des chiens heureux à Belfort | Happy Dog',
-  description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage', // 📝 Description pour les moteurs de recherche
+  description: 'Happy Dog, la boutique des chiens heureux à Belfort. Friandises, accessoires, soins, garderie de jour, bain, toilettage pour le plaisir de votre chien',
   authors: [{ name: 'Benji Belfort', url: 'https://benji-belfort-portfolio.netlify.app/' }],
-  creator: 'Happy Dog', // ✏️ Nom de l’auteur du contenu
-  publisher: 'Happy Dog', // 🏢 Nom de l’éditeur
+  creator: 'Happy Dog',
+  publisher: 'Happy Dog',
+  verification: {
+    google: 'tXqFQhT3Bz_1ax1VAMr58uxHRIGdO44nAAiDwVhDN4k',
+  },
   icons: {
-    icon: "/favicon.ico", // format par défaut
-    shortcut: "/favicon.ico", // version raccourcie
-    apple: "/apple-touch-icon.png", // iOS
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
     other: [
       {
         rel: "icon",
@@ -70,14 +75,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Happy Dog, la boutique des chiens heureux à Belfort',
     description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
-    url: 'https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr', // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    url: 'https://www.happy-dog-belfort.fr',
     siteName: 'La boutique des chiens heureux à Belfort | Happy Dog',
     images: [
       {
-        url: '/images/og-image.jpg', // 🖼️ Image pour le partage (1200x630 conseillé)
+        url: 'https://www.happy-dog-belfort.fr/images/headers/header_home.webp', // 🖼️ Image pour le partage (1200x630 conseillé)
         width: 1200,
         height: 630,
-        alt: 'Photo de la boutique des chiens heureux Happy Dog', // 🖼️ Texte alternatif
+        alt: 'Photo de la boutique des chiens heureux Happy Dog',
       },
     ],
     type: 'website',
@@ -87,9 +92,12 @@ export const metadata: Metadata = {
     card: 'summary_large_image', // 🐦 Type de carte Twitter
     title: 'Happy Dog, la boutique des chiens heureux à Belfort',
     description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
-    images: ['/images/og-image.jpg'], // 🐦 Image Twitter
+    images: ['https://www.happy-dog-belfort.fr/images/headers/header_home.webp'], // 🐦 Image Twitter
   },
-  metadataBase: new URL('https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr'), // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+  metadataBase: new URL('https://www.happy-dog-belfort.fr'),
+  alternates: {
+    canonical: '/',
+  },
 };
 
 
@@ -98,13 +106,61 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+    const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Happy Dog",
+    "image": "https://www.happy-dog-belfort.fr/images/headers/header_home.webp",
+    "description": "La boutique des chiens heureux à Belfort. Friandises, accessoires, soins, garderie de jour, bain, toilettage.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 rue du Général Roussel",
+      "addressLocality": "Belfort",
+      "addressRegion": "FR",
+      "postalCode": "90000",
+      "addressCountry": "France"
+    },
+    "telephone": "06 46 46 76 17",
+    "url": "https://www.happy-dog-belfort.fr",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:15",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "09:15",
+        "closes": "12:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "18:30"
+      }
+    ]
+  };
 
   return (
     <html lang="fr" className={`${zillaSlab.variable} ${libreFranklin.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="relative min-h-screen flex flex-col">
         <BackgroundWrapper />
         <HeaderImage />
         <Navbar />
+        {/* <ScrollHandler /> */}
         <main className="relative z-10 flex-grow">{children}</main>
         <Footer />
       </body>

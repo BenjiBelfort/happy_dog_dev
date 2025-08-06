@@ -83,7 +83,7 @@ const ToilettageTarif = () => {
 
         {/* Bloc horaires chevauchant */}
         <div className={`text-center absolute bottom-[-28px] sm:bottom-[-32px] left-1/2 transform -translate-x-1/2 flex flex-col items-center bg-vert-clair w-[85%] sm:w-[75%] py-1 px-1 rounded-md shadow-lg/30 text-black text-s sm:text-xl font-semibold ${zillaSlab.className}`}>
-            <p>Du mercredi au samedi sur rendez-vous</p>
+            <p>Du jeudi au samedi sur rendez-vous</p>
             <p>06 61 44 84 43</p>
         </div>
     </div>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /_next/static/media
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /*.json$
+
+Sitemap: https://www.happy-dog-belfort.fr/sitemap.xml

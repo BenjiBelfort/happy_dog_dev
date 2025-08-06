@@ -69,16 +69,17 @@ const H1Bloc = () => {
         initial={{ y: 50 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }} // 1 seconde après début du logo
-        className="text-black absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row justify-center md:items-center bg-emerald-50 w-full py-2 md:max-w-3xl h-auto md:h-11 md:w-3xl md:rounded-md shadow-lg/30 md:gap-1 text-xl sm:text-2xl font-bold z-20">
-            <h2>Du lundi au vendredi de 9h15 à 17h30</h2>
-            <h2>et le samedi de 10h à 16h.</h2>
+        className="text-black absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex flex-col justify-center md:items-center bg-emerald-50 w-full py-2 md:max-w-3xl h-auto md:rounded-md shadow-lg/30 text-xl sm:text-2xl font-bold z-20">
+            <h2>Mardi, jeudi et vendredi de 9h15 à 18h30</h2>
+            <h2>le mercredi de 9h15 à 12h30</h2>
+            <h2>et le samedi de 10h à 18h30.</h2>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.6 }}
-          className="absolute w-[90%] sm:w-[70%] lg:w-[50%] bottom-[-82px] sm:bottom-[-58px] rounded-sm left-1/2 transform -translate-x-1/2 text-center bg-neutral-700/90 bg-[url('/pattern/pattern-dots.png')] bg-repeat text-white px-6 py-2 shadow-sm z-10"
+          className="absolute text-xs sm:text-base w-[90%] sm:w-[70%] lg:w-[50%] bottom-[-100px] sm:bottom-[-108px] rounded-sm left-1/2 transform -translate-x-1/2 text-center bg-neutral-700/90 bg-[url('/pattern/pattern-dots.png')] bg-repeat text-white px-2 py-2 shadow-sm z-10"
         >
           Ouverture le premier dimanche du mois de 9h à 12h.
         </motion.div>

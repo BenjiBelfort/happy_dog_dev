@@ -48,6 +48,14 @@
     "description_longue": ""
   },
   {
+    "image": "/images/produits/alimentation/snack.webp",
+    "id": "alimentation-07",
+    "categorie": "Alimentation",
+    "produit": "Snacks",
+    "description": "Des récompenses amusantes et délicieuses au bon goût de poulet ! Miam 😋",
+    "description_longue": "Offrez à votre chien des snacks irrésistibles en forme de bretzels, donuts et torsades, au bon goût de fromage. Un vrai moment de plaisir à chaque bouchée !"
+  },
+  {
     "image": "/images/produits/accessoires/laisses.webp",
     "id": "accessoire-01",
     "categorie": "Accessoires",
@@ -59,7 +67,7 @@
     "image": "/images/produits/accessoires/colliers.webp",
     "id": "accessoire-02",
     "categorie": "Accessoires",
-    "produit": "Colilers",
+    "produit": "Colliers",
     "description": "Un collier, c’est plus qu’un accessoire. C’est une touche de personnalité et de sécurité pour votre chien. Explorez notre collection pour trouver celui qui lui ira à merveille.",
     "description_longue": ""
   },

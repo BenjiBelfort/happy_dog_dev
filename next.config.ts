@@ -1,12 +1,22 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Active l'exportation statique
+  output: 'export',
   images: {
-    unoptimized: true, // Désactive l'optimisation d'image pour l'export statique
+    unoptimized: true,
   },
-  // Optionnel : spécifier le basePath si votre site n'est pas à la racine
-  // basePath: '/mon-dossier',
+  async headers() {
+    return [
+      {
+        // cible TOUT fichier sous /_next/static/media/
+        source: '/_next/static/media/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex' },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

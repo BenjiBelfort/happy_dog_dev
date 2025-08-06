@@ -6,7 +6,7 @@ import TextBloc from './TextBloc';
 
 const MainImg = () => {
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen hero">
         <div className="absolute inset-0 w-full h-full">
             <svg className="w-full h-full -translate-y-[22vh] overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                 <defs>

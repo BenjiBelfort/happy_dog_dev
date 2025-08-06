@@ -13,7 +13,7 @@ const testimonies = [
   },
   {
     image: '/images/portraits/portrait3.png',
-    quote: 'Professionnels et attentionnés, un vrai plaisir.',
+    quote: 'Professionnelles et attentionnées, un vrai plaisir.',
     author: 'Roxy',
   },
 ];

@@ -1,6 +1,6 @@
 
 type BackgroundPatternProps = {
-  variant?: "pattes" | "os" | "none";
+  variant?: "pattes" | "os" | "logo" | "none";
 };
 
 const BackgroundPattern: React.FC<BackgroundPatternProps> = ({ variant = "pattes" }) => {
@@ -12,6 +12,8 @@ const BackgroundPattern: React.FC<BackgroundPatternProps> = ({ variant = "pattes
     backgroundClass = "bg-[url('/images/backgrounds/Fond-pattes.jpg')] bg-[length:500px_500px]";
   } else if (variant === "os") {
     backgroundClass = "bg-[url('/images/backgrounds/fond-os.png')] bg-[length:80px_80px]";
+  } else if (variant === "logo") {
+    backgroundClass = "bg-[url('/images/backgrounds/Fond-HD-2.jpg')]";
   }
 
   return (

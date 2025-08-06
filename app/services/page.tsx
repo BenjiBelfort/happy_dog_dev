@@ -1,3 +1,4 @@
+// app/services/page.tsx
 import { Metadata } from "next";
 import PageTitle from '@/components/headers/PageTitle';
 import ServiceSommaire from '@/components/ui/buttons/ServiceSommaire'
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
   title: 'Services pour chiens heureux à Belfort | Happy Dog',
   description: "Offrez à votre chien un toilettage entre les mains expertes de Au P'tit Bonheur Canin, et garderie de jour chez Happy Dog à Belfort.",
   openGraph: {
-    title: 'Produits pour chiens heureux à Belfort | Happy Dog',
+    title: 'Services pour chiens heureux à Belfort | Happy Dog',
     description: "Offrez à votre chien un toilettage entre les mains expertes de Au P'tit Bonheur Canin, et garderie de jour chez Happy Dog à Belfort.",
-    url: 'https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr', // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    url: 'https://www.happy-dog-belfort.fr/services',
     images: [
       {
         url: '/images/produits/toilettage.webp',
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Services pour chiens heureux à Belfort | Happy Dog',
     description: "Offrez à votre chien un toilettage entre les mains expertes de Au P'tit Bonheur Canin, et garderie de jour chez Happy Dog à Belfort.",
-    images: ['/images/og-produits.jpg'],
+    images: ['https://www.happy-dog-belfort.fr/images/headers/header_services.webp'],
   },
 };
 

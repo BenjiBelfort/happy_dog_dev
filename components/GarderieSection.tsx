@@ -32,7 +32,7 @@ const GarderieSection = () => {
         className="relative w-full md:w-4/7 aspect-[4/3] md:-rotate-1"
       >
           <Image
-            src="/images/services/garderie/garderie1.webp"
+            src="/images/services/garderie/garderie2.webp"
             alt="La garderie des chiens heureux à Belfort"
             fill
             className="object-cover border-10 md:border-16 border-white shadow-lg/30 "
@@ -66,7 +66,7 @@ const GarderieSection = () => {
           className="relative w-full md:w-4/7 aspect-[4/3]"
         >
           <Image
-            src="/images/services/garderie/garderie2.webp"
+            src="/images/services/garderie/garderie1.webp"
             alt="Moments d'attention personnalisée en garderie"
             fill
             className="object-cover border-10 md:border-16 border-white shadow-lg/30"

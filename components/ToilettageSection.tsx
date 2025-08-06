@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image";
 import ToilettageTarif from "@/components/tarifs/ToilettageTarif";
 import LaureBloc from "@/components/blocs/LaureBloc";
@@ -15,7 +14,7 @@ const ToiletageSection = () => {
   const isInView2 = useInView(ref2, { once: true, margin: "-100px" });
 
   return (
-    <section id="toilettage" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24">
+    <section id="toilettage" className="flex flex-col items-center mt-12 scroll-mt-20 md:scroll-mt-24 overflow-hidden">
       <h2 className="text-vert-fonce text-3xl sm:text-4xl font-bold text-center">Bain et toilettage</h2>
 
       <p className="md:text-xl max-w-2xl text-center my-8 mx-2 mb-12">
@@ -119,7 +118,7 @@ const ToiletageSection = () => {
           className="relative md:absolute md:left-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0"
         >
           <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
-            Des activités pour ne jamais s’ennuyer
+            Un bain relaxant et complet
           </h3>
           <p>
             Offrez à votre compagnon un moment de détente et de soin avec un bain complet : shampoing adapté, rinçage doux, séchage minutieux et beaucoup de câlins pour repartir tout propre et heureux.
@@ -152,10 +151,10 @@ const ToiletageSection = () => {
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           className="relative md:absolute md:right-1/2 md:top-1/2 md:-translate-y-1/2 z-10 md:bg-yellow-100 shadow-lg/30 rounded-xl p-4 bg-white max-w-md mt-[-3rem] md:mt-0">
           <h3 className="text-center sm:text-left text-xl sm:text-2xl font-bold mb-2">
-            Du repos et beaucoup de tendresse
+            Une coupe sur mesure
           </h3>
           <p>
-            Selon le type de poil de votre chien, nous réalisons une coupe aux ciseaux, une tonte ou une épilation douce, pour allier hygiène, confort et esthétisme… toujours dans le respect de l’animal.
+            Selon le type de poil de votre chien, nous réalisons une coupe aux ciseaux, une tonte ou une épilation douce, pour allier hygiène, confort et esthétisme... toujours dans le respect de l&apos;animal.
           </p>
         </motion.div>
       </div>

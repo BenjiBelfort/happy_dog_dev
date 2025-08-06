@@ -1,3 +1,4 @@
+// app/produits/page.tsx
 import { Metadata } from "next"; 
 import PageTitle from '@/components/headers/PageTitle';
 import ProductSommaire from '@/components/ui/buttons/ProductSommaire';
@@ -10,11 +11,11 @@ import SoinsSection from "@/components/SoinsSection";
 
 export const metadata: Metadata = {
   title: 'Produits pour chiens heureux à Belfort | Happy Dog',
-  description: 'Découvrez notre sélection de croquettes, friandises et accessoires pour chiens chez Happy Dog à Belfort.',
+  description: 'Découvrez notre sélection de friandises, accessoires et soins pour chiens chez Happy Dog à Belfort.',
   openGraph: {
     title: 'Produits pour chiens heureux à Belfort | Happy Dog',
-    description: 'Découvrez notre sélection de croquettes, friandises et accessoires pour chiens chez Happy Dog à Belfort.',
-    url: 'https://www.METTRE_LE_LIEN_DU_VRAISITE_AVANT_MISE_EN_PRODUCTION.fr', // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    description: 'Découvrez notre sélection de friandises, accessoires et soins pour chiens chez Happy Dog à Belfort.',
+    url: 'https://www.happy-dog-belfort.fr/produits',
     images: [
       {
         url: '/images/produits/produits1.webp',
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: 'Produits pour chiens heureux à Belfort | Happy Dog',
-    description: 'Croquettes, friandises et accessoires pour chiens à Belfort.',
-    images: ['/images/og-produits.jpg'],
+    description: 'friandises, accessoires et soins pour chiens à Belfort.',
+    images: ['https://www.happy-dog-belfort.fr/images/headers/header_produits.webp'],
   },
 };
 
