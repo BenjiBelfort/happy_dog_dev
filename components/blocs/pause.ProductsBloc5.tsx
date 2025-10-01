@@ -28,7 +28,7 @@ const ProductsBloc5 = () => {
                         <PiHairDryerFill size={48} />
                     </span>
                     <h3 className="text-3xl sm:text-4xl font-bold">Bain et toilettage</h3>
-                    <p className="my-4">Offrez à votre compagnon une séance beauté en libre service.</p>
+                    <p className="my-4">Offrez à votre compagnon une séance beauté entre les mains expertes de Laure : <span className="font-bold">Au P&apos;tit Bonheur Canin</span> !</p>
                     <LinkButton
                         text="Découvrir"
                         href="/services#toilettage"

@@ -11,7 +11,7 @@ const HeaderImage = () => {
     switch (pathname) {
       case "/":
         return {
-          src: "/images/headers/header_home.webp",
+          src: "/images/headers/header_home3.webp",
           alt: "Photo de la boutique Happy Dog à Belfort",
           heightClass: "h-[400px] sm:h-[550px] lg:h-[620px]",
         };

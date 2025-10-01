@@ -150,6 +150,7 @@ export default function RootLayout({
 
   return (
     <html lang="fr" className={`${zillaSlab.variable} ${libreFranklin.variable}`}>
+      
       <head>
         <script
           type="application/ld+json"

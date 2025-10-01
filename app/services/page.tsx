@@ -4,7 +4,7 @@ import PageTitle from '@/components/headers/PageTitle';
 import ServiceSommaire from '@/components/ui/buttons/ServiceSommaire'
 import PointSeparator from "@/components/ui/PointSeparator";
 import GarderieSection from "@/components/GarderieSection";
-import ToilettageSection from "@/components/ToilettageSection";
+import ToilettageSection from "@/components/ToilettageSection2";
 
 export const metadata: Metadata = {
   title: 'Services pour chiens heureux à Belfort | Happy Dog',
