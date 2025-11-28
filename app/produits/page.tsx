@@ -12,6 +12,7 @@ import SoinsSection from "@/components/SoinsSection";
 export const metadata: Metadata = {
   title: 'Produits pour chiens heureux à Belfort | Happy Dog',
   description: 'Découvrez notre sélection de friandises, accessoires et soins pour chiens chez Happy Dog à Belfort.',
+  alternates: { canonical: '/produits' },
   openGraph: {
     title: 'Produits pour chiens heureux à Belfort | Happy Dog',
     description: 'Découvrez notre sélection de friandises, accessoires et soins pour chiens chez Happy Dog à Belfort.',

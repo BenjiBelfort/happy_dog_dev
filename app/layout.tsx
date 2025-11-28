@@ -131,7 +131,7 @@ export default function RootLayout({
           "Friday"
         ],
         "opens": "09:15",
-        "closes": "18:30"
+        "closes": "18:00"
       },
       {
         "@type": "OpeningHoursSpecification",
@@ -143,7 +143,7 @@ export default function RootLayout({
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
         "opens": "10:00",
-        "closes": "18:30"
+        "closes": "17:30"
       }
     ]
   };

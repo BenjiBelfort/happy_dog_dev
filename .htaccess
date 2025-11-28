@@ -1,0 +1,65 @@
+# --- OVH + Next export (safe) ---
+
+Options -MultiViews
+RewriteEngine On
+
+# Répare les URLs OVH qui auraient été indexées par erreur
+RedirectMatch 301 ^/homez\.2168/happydy/www/$ /
+RedirectMatch 301 ^/homez\.2168/happydy/www/(services|produits)/?$ /$1/
+# si d'autres chemins fuitent, catch-all :
+RedirectMatch 301 ^/homez\.2168/happydy/www/(.*)$ /$1
+
+
+# 1) HTTPS puis sans www
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# 2) Si l'utilisateur demande explicitement .html -> 301 vers l'URL sans extension
+# (pas de slash ajouté ici : on laisse Apache gérer naturellement)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 3) Servir tel quel si fichier ou dossier existe
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 4) Si on demande /truc/ mais que le dossier n'existe PAS
+# et que /truc.html existe -> le servir (évite 500/404)
+RewriteCond %{REQUEST_URI} .+/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}index.html !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/$ $1.html [L]
+
+# 5) Si on demande /truc (sans extension) et que /truc.html existe -> le servir
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# 6) 404 custom (assure-toi que /404.html existe bien à la racine)
+ErrorDocument 404 /404.html
+
+# 7) (Optionnel) Headers / cache
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "DENY"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  <FilesMatch "\.(js|mjs|css|png|jpg|jpeg|gif|webp|svg|ico|woff2|ttf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "public, max-age=60, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+AddType application/manifest+json .webmanifest

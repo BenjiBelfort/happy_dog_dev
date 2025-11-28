@@ -3,7 +3,7 @@ import Image from 'next/image';
 const testimonies = [
   {
     image: '/images/portraits/portrait1.png',
-    quote: 'Un service irréprochable, je recommande vivement !',
+    quote: 'Un service irréprochable, je recommande vivement !',
     author: 'Max',
   },
   {

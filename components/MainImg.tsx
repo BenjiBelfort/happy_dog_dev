@@ -46,7 +46,7 @@ const MainImg = () => {
           }}
         >
           <Image
-            src="/Logo-Happy-Dog.png"
+            src="/Logo-Happy-Dog.svg"
             alt="Logo Happy Dog"
             width={280}
             height={280}

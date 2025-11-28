@@ -19,7 +19,7 @@ const MainLogo = () => {
         className="w-fit mx-auto"
       >
         <Image
-          src="/Logo-Happy-Dog.png"
+          src="/Logo-Happy-Dog.svg"
           alt="Logo Happy Dog"
           width={806}
           height={439}

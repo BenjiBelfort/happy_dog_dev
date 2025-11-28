@@ -46,9 +46,9 @@ const GarderieTarif = () => {
 
         {/* Bloc horaires chevauchant */}
         <div className={`text-center absolute bottom-[-62px] left-1/2 transform -translate-x-1/2 flex flex-col items-center bg-vert-clair w-[85%] sm:w-[75%] py-1 px-1 rounded-md shadow-lg/30 text-black text-s sm:text-xl font-semibold ${zillaSlab.className}`}>
-            <p>Mardi, jeudi et vendredi de 9h15 à 18h30</p>
+            <p>Mardi, jeudi et vendredi de 9h15 à 18h00</p>
             <p>le mercredi de 9h15 à 12h30</p>
-            <p>et le samedi de 10h à 18h30.</p>
+            <p>et le samedi de 10h à 17h30.</p>
         </div>
     </div>
   );

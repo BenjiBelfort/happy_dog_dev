@@ -10,6 +10,9 @@ const images = [
     '/images/headers/happy-dog-3.webp',
     '/images/headers/happy-dog-4.webp',
     '/images/headers/happy-dog-5.webp',
+    '/images/headers/happy-dog-6.webp',
+    '/images/headers/happy-dog-7.webp',
+    '/images/headers/happy-dog-8.webp',
 ];
 
 const H1Bloc = () => {
@@ -31,7 +34,7 @@ const H1Bloc = () => {
     >
         {/* Partie 1 */}
         <div className="md:basis-2/3 px-4">
-            <h1 className="text-3xl sm:text-4xl font-bold mb-2 md:px-8 hyphens-auto">Bienvenue dans la boutique des chiens heureux&nbsp;!</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2 md:px-8 hyphens-auto">Bienvenue dans la boutique des chiens (chats) heureux&nbsp;!</h1>
             <Image
                 src="/images/backgrounds/ornement.png"
                 alt="ornement"
@@ -70,9 +73,9 @@ const H1Bloc = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }} // 1 seconde après début du logo
         className="text-black absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex flex-col justify-center md:items-center bg-emerald-50 w-full py-2 md:max-w-3xl h-auto md:rounded-md shadow-lg/30 text-xl sm:text-2xl font-bold z-20">
-            <h2>Mardi, jeudi et vendredi de 9h15 à 18h30</h2>
+            <h2>Mardi, jeudi et vendredi de 9h15 à 18h00</h2>
             <h2>le mercredi de 9h15 à 12h30</h2>
-            <h2>et le samedi de 10h à 18h30.</h2>
+            <h2>et le samedi de 10h à 17h30.</h2>
         </motion.div>
 
         <motion.div

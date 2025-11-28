@@ -33,3 +33,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 npm run build avant de mettre en ligne
 
+https://docs.google.com/spreadsheets/d/14EW11qjCgm_Geg8EnXLsq28O_X6cr_7rjdnQNEVo3rU/edit?usp=sharing
+
+
