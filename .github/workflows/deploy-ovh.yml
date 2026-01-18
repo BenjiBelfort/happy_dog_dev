@@ -25,8 +25,8 @@ jobs:
           server: ${{ secrets.OVH_HOST }}
           username: ${{ secrets.OVH_USERNAME }}
           password: ${{ secrets.OVH_PASSWORD }}
-          protocol: sftp
-          port: 22
+          protocol: ftps
+          port: 21
           local-dir: out/
           server-dir: /home/happydy/www/
           dangerous-clean-slate: true
