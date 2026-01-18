@@ -1,17 +1,16 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 const HeaderImage = () => {
   const pathname = usePathname();
 
-  // Définir l’image et le alt selon la route
   const getHeaderData = () => {
     switch (pathname) {
       case "/":
         return {
-          src: "/images/headers/header_home3.webp",
+          src: "/images/headers/header_home3.webp",      // desktop
+          srcMobile: "/images/headers/header_mob.webp", // mobile
           alt: "Photo de la boutique Happy Dog à Belfort",
           heightClass: "h-[400px] sm:h-[550px] lg:h-[620px]",
         };
@@ -32,30 +31,38 @@ const HeaderImage = () => {
     }
   };
 
+
   const headerData = getHeaderData();
 
   if (!headerData) return null;
 
   return (
     <div
-      className={`absolute left-0 w-full z-0 overflow-hidden ${headerData.heightClass}`} // -top-1 
+      className={`absolute left-0 w-full z-0 overflow-hidden ${headerData.heightClass}`}
       style={{
         WebkitMaskImage: "url('/pattern/header-mask.png')",
-        WebkitMaskRepeat: 'no-repeat',
-        WebkitMaskSize: 'cover',
+        WebkitMaskRepeat: "no-repeat",
+        WebkitMaskSize: "cover",
         maskImage: "url('/pattern/header-mask.png')",
-        maskRepeat: 'no-repeat',
-        maskSize: 'cover',
-        maskPosition: 'bottom center',
+        maskRepeat: "no-repeat",
+        maskSize: "cover",
+        maskPosition: "bottom center",
       }}
     >
-      <Image
-        src={headerData.src}
-        alt={headerData.alt}
-        fill
-        priority
-        className="object-cover"
-      />
+      <picture>
+        {headerData.srcMobile && (
+          <source
+            srcSet={headerData.srcMobile}
+            media="(max-width: 450px)"
+          />
+        )}
+        <img
+          src={headerData.src}
+          alt={headerData.alt}
+          className="absolute inset-0 h-full w-full object-cover"
+          loading="eager"
+        />
+      </picture>
     </div>
   );
 };

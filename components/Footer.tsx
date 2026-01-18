@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import logoCPEP from "@/public/logo-CPEP.png";
+import ClientYear from "@/components/ClientYear";
+
 
 export default function Footer() {
-  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-amber-200 text-black">
@@ -135,7 +136,7 @@ export default function Footer() {
       {/* Bas de footer */}
       <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <p className="text-sm opacity-90">
-          © {year} <span className="inline opacity-80">•</span>{" "}
+          © <ClientYear /> <span className="inline opacity-80">•</span>{" "}
           <span className="font-semibold uppercase">Happy Dog</span> Belfort. Tous droits réservés.
         </p>
 

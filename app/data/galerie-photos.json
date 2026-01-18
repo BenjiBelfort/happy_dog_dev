@@ -1,252 +1,520 @@
 [
   {
     "id": "photo-001",
-    "src": "/images/galerie/galerie-happy-dog_1.webp",
+    "number": 1,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-002",
-    "src": "/images/galerie/galerie-happy-dog_2.webp",
+    "number": 2,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-003",
-    "src": "/images/galerie/galerie-happy-dog_3.webp",
+    "number": 3,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-004",
-    "src": "/images/galerie/galerie-happy-dog_4.webp",
+    "number": 4,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-005",
-    "src": "/images/galerie/galerie-happy-dog_5.webp",
+    "number": 5,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-006",
-    "src": "/images/galerie/galerie-happy-dog_6.webp",
+    "number": 6,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-007",
-    "src": "/images/galerie/galerie-happy-dog_7.webp",
+    "number": 7,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-008",
-    "src": "/images/galerie/galerie-happy-dog_8.webp",
+    "number": 8,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-009",
-    "src": "/images/galerie/galerie-happy-dog_9.webp",
+    "number": 9,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-010",
-    "src": "/images/galerie/galerie-happy-dog_10.webp",
+    "number": 10,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-011",
-    "src": "/images/galerie/galerie-happy-dog_11.webp",
+    "number": 11,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-012",
-    "src": "/images/galerie/galerie-happy-dog_12.webp",
+    "number": 12,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-013",
-    "src": "/images/galerie/galerie-happy-dog_13.webp",
+    "number": 13,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-014",
-    "src": "/images/galerie/galerie-happy-dog_14.webp",
+    "number": 14,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-015",
-    "src": "/images/galerie/galerie-happy-dog_15.webp",
+    "number": 15,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-016",
-    "src": "/images/galerie/galerie-happy-dog_16.webp",
+    "number": 16,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-017",
-    "src": "/images/galerie/galerie-happy-dog_17.webp",
+    "number": 17,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-018",
-    "src": "/images/galerie/galerie-happy-dog_18.webp",
+    "number": 18,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-019",
-    "src": "/images/galerie/galerie-happy-dog_19.webp",
+    "number": 19,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-020",
-    "src": "/images/galerie/galerie-happy-dog_20.webp",
+    "number": 20,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-021",
-    "src": "/images/galerie/galerie-happy-dog_21.webp",
+    "number": 21,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-022",
-    "src": "/images/galerie/galerie-happy-dog_22.webp",
+    "number": 22,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-023",
-    "src": "/images/galerie/galerie-happy-dog_23.webp",
+    "number": 23,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-024",
-    "src": "/images/galerie/galerie-happy-dog_24.webp",
+    "number": 24,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-025",
-    "src": "/images/galerie/galerie-happy-dog_25.webp",
+    "number": 25,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-026",
-    "src": "/images/galerie/galerie-happy-dog_26.webp",
+    "number": 26,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-027",
-    "src": "/images/galerie/galerie-happy-dog_27.webp",
+    "number": 27,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-028",
-    "src": "/images/galerie/galerie-happy-dog_28.webp",
+    "number": 28,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-029",
-    "src": "/images/galerie/galerie-happy-dog_29.webp",
+    "number": 29,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-030",
-    "src": "/images/galerie/galerie-happy-dog_30.webp",
+    "number": 30,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-031",
-    "src": "/images/galerie/galerie-happy-dog_31.webp",
+    "number": 31,
+    "ext": "webp",
     "alt": "",
     "title": "Happy Dog",
     "description": ""
   },
   {
     "id": "photo-032",
-    "src": "/images/galerie/galerie-happy-dog_32.webp",
+    "number": 32,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-033",
-    "src": "/images/galerie/galerie-happy-dog_33.webp",
+    "number": 33,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-034",
-    "src": "/images/galerie/galerie-happy-dog_34.webp",
+    "number": 34,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-035",
-    "src": "/images/galerie/galerie-happy-dog_35.webp",
+    "number": 35,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
   },
   {
     "id": "photo-036",
-    "src": "/images/galerie/galerie-happy-dog_36.webp",
+    "number": 36,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-037",
+    "number": 37,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-038",
+    "number": 38,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-039",
+    "number": 39,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-040",
+    "number": 40,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-041",
+    "number": 41,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-042",
+    "number": 42,
+    "ext": "mp4",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-043",
+    "number": 43,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-044",
+    "number": 44,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-045",
+    "number": 45,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-046",
+    "number": 46,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-047",
+    "number": 47,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-048",
+    "number": 48,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-049",
+    "number": 49,
+    "ext": "mp4",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-050",
+    "number": 50,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-051",
+    "number": 51,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-052",
+    "number": 52,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-053",
+    "number": 53,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-054",
+    "number": 54,
+    "ext": "mp4",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-055",
+    "number": 55,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-056",
+    "number": 56,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-057",
+    "number": 57,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-058",
+    "number": 58,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-059",
+    "number": 59,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-060",
+    "number": 60,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-061",
+    "number": 61,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-062",
+    "number": 62,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-063",
+    "number": 63,
+    "ext": "mp4",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-064",
+    "number": 64,
+    "ext": "webp",
+    "alt": "",
+    "title": "",
+    "description": ""
+  },
+  {
+    "id": "photo-065",
+    "number": 65,
+    "ext": "webp",
     "alt": "",
     "title": "",
     "description": ""
