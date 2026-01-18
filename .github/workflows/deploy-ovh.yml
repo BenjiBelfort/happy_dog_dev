@@ -1,37 +1,41 @@
-name: Deploy static to OVH (mutualise)
+name: Deploy static to OVH
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - run: npm ci
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Deploy to OVH (FTPS explicit)
+      - name: Build site (Next.js export)
+        run: npm run build
+
+      - name: Deploy to OVH via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.OVH_HOST }}
           username: ${{ secrets.OVH_USERNAME }}
           password: ${{ secrets.OVH_PASSWORD }}
-
-          protocol: ftps
-          port: 21
-
-          security: loose
-          dangerous-clean-slate: true
-
           local-dir: out/
           server-dir: /home/happydy/www/
-
+          dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.DS_Store
+            **/node_modules/**
+            **/.github/**
