@@ -19,14 +19,19 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy to OVH
+      - name: Deploy to OVH (FTPS explicit)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.OVH_HOST }}
           username: ${{ secrets.OVH_USERNAME }}
           password: ${{ secrets.OVH_PASSWORD }}
+
           protocol: ftps
           port: 21
+
+          security: loose
+          dangerous-clean-slate: true
+
           local-dir: out/
           server-dir: /home/happydy/www/
-          dangerous-clean-slate: true
+
