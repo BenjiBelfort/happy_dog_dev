@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.OVH_USERNAME }}
           password: ${{ secrets.OVH_PASSWORD }}
           local-dir: out/
-          server-dir: /home/happydy/www/
+          server-dir: /www/
           dangerous-clean-slate: true
           exclude: |
             **/.git*
