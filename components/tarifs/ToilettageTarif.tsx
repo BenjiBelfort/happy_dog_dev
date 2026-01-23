@@ -18,73 +18,101 @@ const ToilettageTarif = () => {
             height={63}
             className="w-54 mx-auto my-2"
         />
-        <p className="text-center mb-4">Les tarifs inclus : griffes, soins oreilles et yeux, démêlage, bain, coupe et surtout beaucoup de câlins.</p>
-
+ 
         <div className="md:px-18">
-            {/* petit chien */}
-            <div className="my-12">
+            {/* Bain & brossage */}
+            <div className="my-8">
             <div className="flex justify-between items-baseline mb-2">
-                <h4 className="text-lg sm:text-xl font-bold underline">Mini / Petit chien</h4>
-                <p className="italic text-sm sm:text-base">Durée : 1h30 environ</p>
+                <h4 className="text-lg sm:text-xl font-bold underline">Bain & brossage</h4>
             </div>
             <div className="flex justify-between">
-                <p>Bain</p>
-                <p className="font-bold">30 à 45 €</p>
+                <p>Petits clients</p>
+                <p className="font-bold">40 € - 1 heure</p>
             </div>
             <div className="flex justify-between">
-                <p>Coupe / Tonte / Épilation</p>
-                <p className="font-bold">40 à 55 €</p>
+                <p>Grands cliens</p>
+                <p className="font-bold">50 € / heure</p>
+            </div>
+                <p><span className="font-bold">10 €</span> supplémentaire pour un soin pendant le shampoing sur demande</p>
+            </div>
+
+            {/* Tonte */}
+            <div className="my-8">
+            <div className="flex justify-between items-baseline mb-2">
+                <h4 className="text-lg sm:text-xl font-bold underline">Tonte</h4>
+            </div>
+            <div className="flex justify-between">
+                <p>Petits clients</p>
+                <p className="font-bold">50 €</p>
+            </div>
+            <div className="flex justify-between">
+                <p>Moyens cliens</p>
+                <p className="font-bold">55 € - 60 €</p>
+            </div>
+            <div className="flex justify-between">
+                <p>Grands cliens</p>
+                <p className="font-bold">65 € - 70 €</p>
             </div>
             </div>
 
-            {/* chien moyen */}
-            <div className="my-12">
+            {/* Coupe Ciseaux */}
+            <div className="my-8">
+                <div className="flex justify-between items-baseline mb-2">
+                    <h4 className="text-lg sm:text-xl font-bold underline">Coupe Ciseaux</h4>
+                    <p className="font-bold">65 €</p>
+                </div>
+            </div>
+
+            {/* Épilation */}
+            <div className="my-8">
+                <div className="flex justify-between items-baseline mb-2">
+                    <h4 className="text-lg sm:text-xl font-bold underline">Épilation</h4>
+                    <p className="font-bold">80 €</p>
+                </div>
+            </div>
+
+            {/* Chat */}
+            <div className="my-8">
             <div className="flex justify-between items-baseline mb-2">
-                <h4 className="text-lg sm:text-xl font-bold underline">Chien moyen</h4>
-                <p className="italic text-sm sm:text-base">Durée : 2h00 environ</p>
+                <h4 className="text-lg sm:text-xl font-bold underline">Chat</h4>
             </div>
             <div className="flex justify-between">
-                <p>Bain</p>
-                <p className="font-bold">45 à 60 €</p>
+                <p>Bain & brossage</p>
+                <p className="font-bold">35 € - 40 €</p>
             </div>
             <div className="flex justify-between">
-                <p>Tonte / Épilation</p>
-                <p className="font-bold">50 à 65 €</p>
+                <p>Brossage & shampoing</p>
+                <p className="font-bold">25 € / heure</p>
+            </div>
+            <div className="flex justify-between">
+                <p>Tonte</p>
+                <p className="font-bold">45 €</p>
             </div>
             </div>
 
-            {/* grand chien */}
-            <div className="my-12">
+            {/* Lapin */}
+            <div className="my-8">
             <div className="flex justify-between items-baseline mb-2">
-                <h4 className="text-lg sm:text-xl font-bold underline">Grand chien</h4>
-                <p className="italic text-sm sm:text-base">Durée : 2h00 environ</p>
+                <h4 className="text-lg sm:text-xl font-bold underline">Lapin</h4>
             </div>
             <div className="flex justify-between">
-                <p>Bain + finition</p>
-                <p className="font-bold">55 à 65 €</p>
-            </div>
-            </div>
-
-            {/* très grand chien */}
-            <div className="my-12">
-            <div className="flex justify-between items-baseline mb-2">
-                <h4 className="text-lg sm:text-xl font-bold underline">Très grand chien</h4>
-                <p className="italic text-sm sm:text-base">Durée : 3h30 environ</p>
+                <p>Brossage & coupe</p>
+                <p className="font-bold">20 €</p>
             </div>
             <div className="flex justify-between">
-                <p>Prix sur devis après avoir vu l&apos;animal</p>
+                <p>Bain & brossage</p>
+                <p className="font-bold">30 €</p>
             </div>
             </div>
-
         </div>
 
-        <p className="text-center text-sm">Un supplément pourra être demandé suivant l&apos;état du pelage et le caractère de l&apos;animal.</p>
+        <p className="text-center text-sm">Un supplément peut être demandé en cas de <span className="text-base font-semibold">gros nœuds</span></p>
         </div>
 
         {/* Bloc horaires chevauchant */}
-        <div className={`text-center absolute bottom-[-28px] sm:bottom-[-32px] left-1/2 transform -translate-x-1/2 flex flex-col items-center bg-vert-clair w-[85%] sm:w-[75%] py-1 px-1 rounded-md shadow-lg/30 text-black text-s sm:text-xl font-semibold ${zillaSlab.className}`}>
-            <p>Du jeudi au samedi sur rendez-vous</p>
-            <p>06 61 44 84 43</p>
+        <div className={`text-center absolute bottom-[-30px] sm:bottom-[-32px] left-1/2 transform -translate-x-1/2 flex flex-col items-center bg-vert-clair w-[85%] sm:w-[75%] py-1 px-1 rounded-md shadow-lg/30 text-black text-s sm:text-xl font-semibold ${zillaSlab.className}`}>
+            <p>Les mardis, jeudis et vendredis sur rendez-vous</p>
+            <p>07 69 41 41 75</p>
         </div>
     </div>
   );

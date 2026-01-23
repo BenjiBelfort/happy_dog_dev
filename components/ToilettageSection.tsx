@@ -18,7 +18,16 @@ const ToiletageSection = () => {
       <h2 className="text-vert-fonce text-3xl sm:text-4xl font-bold text-center">Bain et toilettage</h2>
 
       <p className="md:text-xl max-w-2xl text-center my-8 mx-2 mb-12">
-        Offrez à votre compagnon une séance de toilettage tout en douceur avec <span className="font-bold">Laure</span>, notre experte. Du bain relaxant à la coupe soignée, chaque étape est pensée pour le bien-être de votre chien. Résultat : un poil doux, une allure élégante… et un chien tout beau, tout propre !</p>
+  Confiez votre compagnon à <span className="font-bold">Pauline</span>, passionnée par les animaux et attentive à leur 
+  <span className="font-bold"> bien-être</span>.  
+  À l’écoute de chaque animal, petits ou grands chiens, chats ou lapins, 
+  elle s’adapte à leur <span className="font-bold">caractère</span> et prend le <span className="font-bold">temps nécessaire</span> pour que chaque séance de toilettage soit un moment 
+  <span className="font-bold"> calme</span>, 
+  <span className="font-bold"> doux</span> et<span className="font-bold"> agréable</span>.
+</p>
+
+
+
       
       <div className="max-w-5xl mx-auto">
         <div className="flex justify-center items-center">

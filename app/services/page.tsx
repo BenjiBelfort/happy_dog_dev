@@ -4,7 +4,7 @@ import PageTitle from '@/components/headers/PageTitle';
 import ServiceSommaire from '@/components/ui/buttons/ServiceSommaire';
 import PointSeparator from "@/components/ui/PointSeparator";
 import GarderieSection from "@/components/GarderieSection";
-import ToilettageSection from "@/components/ToilettageSection2";
+import ToilettageSection from "@/components/ToilettageSection";
 
 export const metadata = {
   metadataBase: new URL('https://www.happy-dog-belfort.fr'),
