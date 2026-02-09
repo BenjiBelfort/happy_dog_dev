@@ -1,4 +1,5 @@
 "use client";
+// components/headers/HeaderImage.tsx
 
 import { usePathname } from "next/navigation";
 
