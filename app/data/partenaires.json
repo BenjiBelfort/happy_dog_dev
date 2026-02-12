@@ -113,5 +113,15 @@
     "name": "Oh my dog",
     "logo": "/images/Marques/oh-my-dog-logo.jpg",
     "alt": "Logo Oh My Dog"
+  },
+  {
+    "name": "Molly & Co",
+    "logo": "/images/Marques/logo-molly-co.avif",
+    "alt": "Logo Molly & Co"
+  },
+  {
+    "name": "Hofman Animal Care",
+    "logo": "/images/Marques/logo-hofman.svg",
+    "alt": "Logo Hofman Animal Care"
   }
 ]
