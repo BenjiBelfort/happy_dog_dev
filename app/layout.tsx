@@ -35,7 +35,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'La boutique des chiens heureux à Belfort | Happy Dog',
-  description: 'Happy Dog, la boutique des chiens heureux à Belfort. Friandises, accessoires, soins, garderie de jour, bain, toilettage pour le plaisir de votre chien',
+  description:
+    'Happy Dog propose le toilettage pour chiens et chats à Belfort : bain, soins, accessoires, friandises et garderie de jour dans votre boutique canine.',
   authors: [{ name: 'Benji Belfort', url: 'https://benji-belfort-portfolio.netlify.app/' }],
   creator: 'Happy Dog',
   publisher: 'Happy Dog',
@@ -73,26 +74,28 @@ export const metadata: Metadata = {
     title: "Happy Dog",
   },
   openGraph: {
-    title: 'Happy Dog, la boutique des chiens heureux à Belfort',
-    description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
+    title: 'Toilettage chien à Belfort | Happy Dog',
+    description:
+      'Salon de toilettage pour chiens à Belfort : bain, soins, friandises, accessoires et garderie de jour chez Happy Dog.',
     url: 'https://www.happy-dog-belfort.fr',
-    siteName: 'La boutique des chiens heureux à Belfort | Happy Dog',
+    siteName: 'Happy Dog',
     images: [
       {
-        url: 'https://www.happy-dog-belfort.fr/images/headers/header_home.webp', // 🖼️ Image pour le partage (1200x630 conseillé)
+        url: 'https://www.happy-dog-belfort.fr/images/headers/header_home.webp',
         width: 1200,
         height: 630,
-        alt: 'Photo de la boutique des chiens heureux Happy Dog',
+        alt: 'Toilettage pour chiens à Belfort chez Happy Dog',
       },
     ],
     type: 'website',
     locale: 'fr_FR',
   },
   twitter: {
-    card: 'summary_large_image', // 🐦 Type de carte Twitter
-    title: 'Happy Dog, la boutique des chiens heureux à Belfort',
-    description: 'Happy Dog, la boutique des chiens heureux à Belfort. Croquettes, friandises, accessoires, garderie de jour, bain, toilettage',
-    images: ['https://www.happy-dog-belfort.fr/images/headers/header_home.webp'], // 🐦 Image Twitter
+    card: 'summary_large_image',
+    title: 'Toilettage chien à Belfort | Happy Dog',
+    description:
+      'Salon de toilettage pour chiens à Belfort : bain, soins, accessoires, friandises et garderie de jour.',
+    images: ['https://www.happy-dog-belfort.fr/images/headers/header_home.webp'],
   },
   metadataBase: new URL('https://www.happy-dog-belfort.fr'),
   alternates: {
@@ -108,7 +111,7 @@ export default function RootLayout({
 }>) {
     const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Store",
+    "@type": "PetStore",
     "name": "Happy Dog",
     "image": "https://www.happy-dog-belfort.fr/images/headers/header_home.webp",
     "description": "La boutique des chiens heureux à Belfort. Friandises, accessoires, soins, garderie de jour, bain, toilettage.",
