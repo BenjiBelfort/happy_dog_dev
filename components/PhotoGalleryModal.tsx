@@ -25,7 +25,13 @@ const filenameToAlt = (src: string) => {
   return base.replace(/[-_]+/g, " ").trim() || "Image";
 };
 
-export default function PhotoGalleryModal({ items, index, onClose, onPrev, onNext }: Props) {
+export default function PhotoGalleryModal({
+  items,
+  index,
+  onClose,
+  onPrev,
+  onNext,
+}: Props) {
   const prefersReducedMotion = useReducedMotion();
   const item = items[index];
   const src = buildSrc(item.number, item.ext);
@@ -34,12 +40,15 @@ export default function PhotoGalleryModal({ items, index, onClose, onPrev, onNex
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "ArrowRight") onNext();
       if (e.key === "ArrowLeft") onPrev();
     };
+
     window.addEventListener("keydown", onKey);
+
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKey);
@@ -53,25 +62,27 @@ export default function PhotoGalleryModal({ items, index, onClose, onPrev, onNex
         role="dialog"
         aria-modal="true"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: prefersReducedMotion ? 0 : 0.15 } }}
-        exit={{ opacity: 0, transition: { duration: prefersReducedMotion ? 0 : 0.12 } }}
+        animate={{
+          opacity: 1,
+          transition: { duration: prefersReducedMotion ? 0 : 0.15 },
+        }}
+        exit={{
+          opacity: 0,
+          transition: { duration: prefersReducedMotion ? 0 : 0.12 },
+        }}
         onClick={onClose}
       >
-        <div className="absolute inset-0 flex items-center justify-center p-4" onClick={(e) => e.stopPropagation()}>
-          <button
-            onClick={onClose}
-            className="z-[9999] text-xl absolute bottom-4 right-4 rounded-full border border-white/30 text-white/90 px-3 py-1.5 hover:bg-white/10 cursor-pointer hover:scale-115 transition-transform"
-            aria-label="Fermer"
-          >
-            ✕
-          </button>
-
+        <div
+          className="absolute inset-0 flex items-center justify-center p-4 md:p-6"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Flèche desktop gauche */}
           <button
             onClick={onPrev}
             className="hidden md:inline-flex items-center justify-center absolute left-3 top-1/2 -translate-y-1/2 group"
             aria-label="Média précédent"
           >
-            <span className="text-3xl text-white/90 transform transition duration-300 group-hover:-translate-x-1 cursor-pointer">
+            <span className="text-3xl text-white/90 transition duration-300 group-hover:-translate-x-1 cursor-pointer">
               <IoMdArrowRoundBack />
             </span>
           </button>
@@ -79,11 +90,20 @@ export default function PhotoGalleryModal({ items, index, onClose, onPrev, onNex
           <motion.figure
             key={item?.id ?? index}
             initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 8 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: prefersReducedMotion ? 0 : 0.2 } }}
-            exit={{ opacity: 0, y: prefersReducedMotion ? 0 : -8, transition: { duration: prefersReducedMotion ? 0 : 0.12 } }}
-            className="w-full flex flex-col items-center"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: prefersReducedMotion ? 0 : 0.2 },
+            }}
+            exit={{
+              opacity: 0,
+              y: prefersReducedMotion ? 0 : -8,
+              transition: { duration: prefersReducedMotion ? 0 : 0.12 },
+            }}
+            className="w-full max-w-5xl flex flex-col items-center pt-14 md:pt-16"
           >
-            <div className="relative w-[90vw] max-w-5xl h-[80vh] overflow-hidden">
+            {/* Zone média */}
+            <div className="relative w-[90vw] max-w-5xl h-[62vh] md:h-[80vh] overflow-hidden">
               {isVideo ? (
                 <video
                   className="h-full w-full object-contain"
@@ -105,36 +125,70 @@ export default function PhotoGalleryModal({ items, index, onClose, onPrev, onNex
               )}
             </div>
 
+            {/* Texte */}
             {(item.title || item.description) && (
-              <figcaption className="mt-4 text-center text-white/90 max-w-[90vw]">
-                {item.title && <div className="text-lg font-semibold">{item.title}</div>}
-                {item.description && <p className="text-sm text-white/80">{item.description}</p>}
+              <figcaption className="mt-4 px-4 pb-20 md:pb-0 text-center text-white/90 max-w-[90vw]">
+                {item.title && (
+                  <div className="text-lg font-semibold">{item.title}</div>
+                )}
+                {item.description && (
+                  <p className="mt-1 text-sm text-white/80">
+                    {item.description}
+                  </p>
+                )}
               </figcaption>
             )}
           </motion.figure>
 
+          {/* Flèche desktop droite */}
           <button
             onClick={onNext}
             className="hidden md:inline-flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2 group"
             aria-label="Média suivant"
           >
-            <span className="text-3xl text-white/90 transform transition duration-300 group-hover:translate-x-1 cursor-pointer">
+            <span className="text-3xl text-white/90 transition duration-300 group-hover:translate-x-1 cursor-pointer">
               <IoMdArrowRoundForward />
             </span>
           </button>
 
-          <div className="md:hidden absolute bottom-5.5 inset-x-0 flex items-center justify-center gap-16">
-            <button onClick={onPrev} className="group inline-flex items-center justify-center" aria-label="Média précédent">
-              <span className="text-3xl text-white/90 transform transition duration-300 group-hover:-translate-x-1 cursor-pointer">
+          {/* Navigation mobile */}
+          <div className="md:hidden absolute bottom-4 inset-x-0 flex items-center justify-center gap-16">
+            <button
+              onClick={onPrev}
+              className="group inline-flex items-center justify-center"
+              aria-label="Média précédent"
+            >
+              <span className="text-3xl text-white/90 transition duration-300 group-hover:-translate-x-1 cursor-pointer">
                 <IoMdArrowRoundBack />
               </span>
             </button>
-            <button onClick={onNext} className="group inline-flex items-center justify-center" aria-label="Média suivant">
-              <span className="text-3xl text-white/90 transform transition duration-300 group-hover:translate-x-1 cursor-pointer">
+
+            <button
+              onClick={onNext}
+              className="group inline-flex items-center justify-center"
+              aria-label="Média suivant"
+            >
+              <span className="text-3xl text-white/90 transition duration-300 group-hover:translate-x-1 cursor-pointer">
                 <IoMdArrowRoundForward />
               </span>
             </button>
           </div>
+
+          {/* Barre bas : numéro + fermeture */}
+          <div className="pointer-events-none absolute bottom-3 left-4 right-4 z-[9999] flex items-center justify-between md:left-6 md:right-6 md:bottom-6">
+            <div className="pointer-events-auto rounded-full border border-white/30 bg-black/35 px-3 py-1.5 text-xl text-white/90 backdrop-blur-sm">
+              {item.number}
+            </div>
+
+            <button
+              onClick={onClose}
+              className="pointer-events-auto rounded-full border border-white/30 bg-black/35 px-3 py-1.5 text-xl text-white/90 backdrop-blur-sm transition-transform hover:scale-110 hover:bg-white/10 cursor-pointer"
+              aria-label="Fermer"
+            >
+              ✕
+            </button>
+          </div>
+
         </div>
       </motion.div>
     </AnimatePresence>
