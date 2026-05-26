@@ -151,12 +151,12 @@ export default function Footer() {
           <span className="hidden md:inline opacity-80">•</span>
 
           <a
-            href="https://benji-belfort-portfolio.netlify.app/"
+            href="https://www.cpep.fr/?webProject=happy-dog-belfort#web"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm hover:text-sky-700 hover:underline transition-colors hover:underline-offset-4"
           >
-            Dev by Benji Belfort
+            Dev by CPEP
             <Image
               src={logoCPEP}
               alt="Logo CPEP"
