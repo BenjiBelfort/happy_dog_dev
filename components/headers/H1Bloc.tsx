@@ -69,14 +69,39 @@ const H1Bloc = () => {
         </div>
 
         <motion.div
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }} // 1 seconde après début du logo
-        className="text-black absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 flex flex-col justify-center md:items-center bg-emerald-50 w-full py-2 md:max-w-3xl h-auto md:rounded-md shadow-lg/30 text-xl sm:text-2xl font-bold z-20">
-            <h2>Mardi, jeudi et vendredi de 9h15 à 18h00</h2>
-            <h2>le mercredi de 9h15 à 12h30</h2>
-            <h2>et le samedi de 10h à 17h30.</h2>
-        </motion.div>
+            initial={{ y: 50 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="
+              absolute bottom-[-70px] left-1/2 z-20
+              flex h-auto w-full -translate-x-1/2 flex-col
+              justify-center bg-emerald-50 py-2
+              text-xl font-bold text-black shadow-lg/30
+              sm:text-2xl md:max-w-3xl md:items-center md:rounded-md
+            "
+          >
+            <h2>Lundi de 9h15 à 12h30</h2>
+            <h2>Mardi, jeudi et vendredi de 9h15 à 18h</h2>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-3">
+              <h2>et le samedi de 10h à 17h30.</h2>
+
+              <motion.span
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 1.4 }}
+                className="
+                  inline-flex -rotate-2 items-center
+                  rounded border border-red-300
+                  bg-red-50 px-2 py-0.5
+                  text-sm font-semibold text-red-700
+                  shadow-sm sm:text-base
+                "
+              >
+                Fermé le mercredi
+              </motion.span>
+            </div>
+          </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -20 }}
