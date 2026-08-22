@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/happydogbelfort"
+              href="https://www.instagram.com/happy_dog_belfort"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -120,9 +120,10 @@ export default function Footer() {
               Horaires
             </h3>
             <ul className="mt-2">
-              <li><span className="italic">Mardi, jeudi et vendredi&nbsp;</span> : 9h15 – 18h00</li>
-              <li><span className="italic">Mercredi&nbsp;</span> : 9h15 – 12h30</li>
-              <li><span className="italic">Samedi&nbsp;</span> : 10h00 – 17h30</li>
+              <li><span className="italic">Lundi&nbsp;</span> : 9h15 – 12h30</li>
+              <li><span className="italic">Mardi, jeudi et vendredi&nbsp;</span> : 9h15 – 18h</li>
+              <li><span className="italic">Mercredi&nbsp;</span> : fermé</li>
+              <li><span className="italic">Samedi&nbsp;</span> : 10h – 17h30</li>
             </ul>
           </div>
         </div>

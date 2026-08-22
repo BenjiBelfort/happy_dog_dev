@@ -145,7 +145,7 @@ export default function Navbar() {
 
           {/* Instagram Icon */}
           <a
-            href="https://www.instagram.com/happydogbelfort"
+            href="https://www.instagram.com/happy_dog_belfort"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -250,7 +250,7 @@ export default function Navbar() {
             <FaFacebook />
           </a>
           <a
-            href="https://www.instagram.com/happydogbelfort"
+            href="https://www.instagram.com/happy_dog_belfort"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl"
