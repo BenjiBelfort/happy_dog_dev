@@ -99,10 +99,10 @@ export default function Footer() {
             <p>
               Tél.{" "}
               <a
-                href="tel:+33646467617"
+                href="tel:+33361887871"
                 className="hover:underline hover:underline-offset-4"
               >
-                06&nbsp;46&nbsp;46&nbsp;76&nbsp;17
+                +33 3 61 88 78 71
               </a>
             </p>
             <p>

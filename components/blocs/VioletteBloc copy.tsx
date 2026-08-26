@@ -19,7 +19,7 @@ const VioletteBloc = () => {
                 className="w-54 mx-auto my-2 invert"
             />
             <p className="">11 rue du Général Roussel, 90000 Belfort</p>
-            <p className="font-bold">06 46 46 76 17</p>
+            <p className="font-bold">+33 3 61 88 78 71</p>
             <a href="mailto:happydogbelfort@gmail.com" className='underline decoration-slate-500'>happydogbelfort@gmail.com</a>
         </div>
 

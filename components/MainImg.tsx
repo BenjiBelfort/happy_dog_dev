@@ -193,7 +193,7 @@ const MainImg = () => {
                 <h1 className="text-3xl sm:text-4xl font-bold mb-2">Bienvenue dans la boutique des chiens heureux</h1>
                 <p className="mb-1">Nous vous accueillons</p>
                 <p className="mb-1">11 rue du Général Roussel, 90000 Belfort</p>
-                <p className="text-base">06 46 46 76 17</p>
+                <p className="text-base">+33 3 61 88 78 71</p>
                 <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row justify-center md:items-center bg-vert-clair text-vert-fonce w-full py-2 md:max-w-3xl h-auto md:h-11 md:w-3xl md:rounded-md shadow-lg/30 md:gap-1 text-xl sm:text-2xl font-bold">
                     <h2>Du lundi au vendredi de 8h15 à 17h30</h2>
                     <h2>et le samedi de 10h à 16h.</h2>

@@ -43,7 +43,7 @@ const VioletteBloc = () => {
           <br />
           <span className="font-bold">11 rue du Général Roussel, 90000 Belfort</span>
           <br />
-          <span className="font-bold">06 46 46 76 17</span>
+          <span className="font-bold">+33 3 61 88 78 71</span>
           <br />
           <a href="mailto:happydogbelfort@gmail.com" className="underline decoration-slate-500">
             happydogbelfort@gmail.com

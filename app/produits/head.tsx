@@ -15,7 +15,7 @@ export default function Head() {
       "postalCode": "90000",
       "addressCountry": "FR"
     },
-    "telephone": "06 46 46 76 17",
+    "telephone": "+33 3 61 88 78 71",
     "department": [
       {
         "@type": "DepartmentStore",

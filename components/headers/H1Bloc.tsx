@@ -43,7 +43,7 @@ const H1Bloc = () => {
                 className="w-80 mx-auto my-2"
             />
             <p className="mb-1 mt-4">11 rue du Général Roussel, 90000 Belfort</p>
-            <p className="font-bold">06 46 46 76 17</p>
+            <p className="font-bold">+33 3 61 88 78 71</p>
         </div>
 
         {/* Partie 2 */}

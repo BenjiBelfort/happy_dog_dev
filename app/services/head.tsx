@@ -16,7 +16,7 @@ export default function Head() {
         "postalCode": "90000",
         "addressCountry": "France"
       },
-      "telephone": "06 46 46 76 17",
+      "telephone": "+33 3 61 88 78 71",
       "url": "https://www.happy-dog-belfort.fr/services"
     },
     "description": "Offrez à votre chien un toilettage entre les mains expertes de Au P'tit Bonheur Canin, et garderie de jour chez Happy Dog à Belfort."
